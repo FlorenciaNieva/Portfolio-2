@@ -1,4 +1,4 @@
-import React from 'react'
+import 'react-fancy-circular-carousel/FancyCarousel.css';
 
 export default function Projects() {
   return (
