@@ -21,7 +21,7 @@ export default function circularCarousel({ data }) {
     <>
       <Container>
         <Row className="mt-3">
-          <Col className="d-flex justify-content-center align-items-center mt-5">
+          <Col className="d-flex mt-5">
             <div className="circular-carousel">
               <FancyCarousel
                 images={images}
