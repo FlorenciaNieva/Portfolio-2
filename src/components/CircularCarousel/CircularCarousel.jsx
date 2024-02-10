@@ -43,7 +43,6 @@ export default function circularCarousel({ data }) {
               tools={info[focusElement]?.tools}
               link={info[focusElement]?.link}
               repo={info[focusElement]?.repo}
-              img={images}
               focusElement={focusElement}
             />
           </Col>
