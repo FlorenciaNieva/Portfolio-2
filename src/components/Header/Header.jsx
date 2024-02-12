@@ -5,7 +5,7 @@ import logo from "../../assets/logo/logo.svg"
 
 export default function Header() {
   return (
-    <header style={{backgroundColor:"#c52dff"}}>
+    <header>
       <Navbar data-bs-theme="light" expand="lg" className="px-2" >
           <img
             alt="logo"
@@ -18,23 +18,17 @@ export default function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
             <Nav.Link>
-              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-                About Me
+              <Link to="/" className="link">
+                Home
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link
-                to="/projects"
-                style={{ textDecoration: "none", color: "white" }}
-              >
+              <Link to="/projects" className="link">
                 Projects
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link
-                to="/contact"
-                style={{ textDecoration: "none", color: "white" }}
-              >
+              <Link to="/contact" className="link">
                 Contact
               </Link>
             </Nav.Link>
