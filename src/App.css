@@ -4,6 +4,32 @@
   font-family: "Lucida Sans", sans-serif;
 }
 
+/* ------ Header ------ */
+
+header {
+  background-color: transparent;
+}
+
+nav .link {
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 3px 1px;
+  background-position-y: -0%;
+  background-image: linear-gradient( #200E3A 50%, #45CFDD 50%);
+  transition: background 500ms ease;
+  background-size: 2px;
+  background-size: auto 175%;
+}
+
+nav .link:hover {
+  background-position-y: 100%;
+}
+
+.navbar-toggler-icon {
+  font-size: 0.8rem; 
+}
+
 .project-card {
   width: 30rem;
   border-radius: 0.5rem;
