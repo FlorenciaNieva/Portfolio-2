@@ -1,3 +1,9 @@
+* {
+  background-color: #200E3A;
+  color: white;
+  font-family: "Lucida Sans", sans-serif;
+}
+
 .project-card {
   width: 30rem;
   border-radius: 0.5rem;
