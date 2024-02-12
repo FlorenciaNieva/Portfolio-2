@@ -6,7 +6,7 @@ import logo from "../../assets/logo/logo.svg"
 export default function Header() {
   return (
     <header>
-      <Navbar data-bs-theme="light" expand="lg" className="px-2" >
+      <Navbar data-bs-theme="dark" expand="sm" className="px-2" >
           <img
             alt="logo"
             src={logo}
