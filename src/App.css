@@ -1,5 +1,4 @@
 * {
-  background-color: #200E3A;
   color: white;
   font-family: "Lucida Sans", sans-serif;
 }
@@ -7,7 +6,7 @@
 /* ------ Header ------ */
 
 header {
-  background-color: transparent;
+  background-color: #200e3a;
 }
 
 nav .link {
@@ -28,6 +27,92 @@ nav .link:hover {
 
 .navbar-toggler-icon {
   font-size: 0.8rem; 
+}
+
+/* ------- Home ------- */
+
+/* Prsentation */
+
+.container-presentation {
+  background-color: #200e3a;
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  padding-left: 15vh !important;
+}
+
+.sub-title-presentation {
+  font-size: 3rem;
+}
+
+.text-animation {
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Lucida Sans";
+    font-size: 4rem;
+    background: linear-gradient(to right, #45cfdd 50%, #b12cff 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.button-animation {
+  position: relative;
+  padding: 10px 50px !important;
+  border-radius: 100vw !important;
+  background-color: transparent !important;
+  border: solid 1px #b12cff !important;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  .button-text {
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+  }
+  .fill-container {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    padding-bottom: 100%;
+    transform: translateY(-50%) rotate(180deg);
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #45cfdd;
+      border-radius: 50%;
+      transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+      transform: translateY(-100%);
+    }
+  }
+  &:hover {
+    transform: translateY(-4px);
+    .fill-container {
+      transform: translateY(-50%) rotate(0);
+      &::after {
+        transform: translateY(0);
+      }
+    }
+  }
 }
 
 .project-card {
