@@ -23,6 +23,11 @@ export default function Header() {
               </Link>
             </Nav.Link>
             <Nav.Link>
+              <Link to="/about-me" className="link">
+                About me
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
               <Link to="/projects" className="link">
                 Projects
               </Link>
