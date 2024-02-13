@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import CircularCarousel from "../CircularCarousel/CircularCarousel";
 import { collection, getDocs } from "firebase/firestore";
 import db from "../../../firestore.config";
 
@@ -25,7 +24,7 @@ export default function Projects() {
 
   return (
     <>
-      <CircularCarousel data={data} />
+      Projects
     </>
   );
 }
