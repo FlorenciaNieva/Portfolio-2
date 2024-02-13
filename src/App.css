@@ -31,8 +31,6 @@ nav .link:hover {
 
 /* ------- Home ------- */
 
-/* Prsentation */
-
 .container-presentation {
   background-color: #200e3a;
   display: flex;
@@ -113,6 +111,36 @@ nav .link:hover {
       }
     }
   }
+}
+
+/* ----- About Me ----- */
+
+.container-about {
+  background-color: #200e3a;
+  padding-top: 100px;
+}
+
+.img-profile {
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.about-me {
+  min-width: 300px;
+}
+
+.letter-aqua {
+  font-weight: bold;
+  color: #45CFDD;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #45CFDD  0%, #b12cff 40%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .project-card {
