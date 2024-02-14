@@ -1,4 +1,4 @@
-import { Card, Badge, Row, Col, Image } from "react-bootstrap";
+import { Card, Badge, Row, Col } from "react-bootstrap";
 import {
   FaGithub,
   FaExternalLinkAlt,
@@ -18,27 +18,10 @@ import {
   SiThemoviedatabase,
   SiVite,
 } from "react-icons/si";
-import MemesProjectImage from "../../assets/images/memesCard.png";
-import AhorradasProjectImage from "../../assets/images/ahorradasCard.png";
-import MovieProjectImage from "../../assets/images/movieappCard.png";
 
 export default function ProjectCard({ name, repo, link, overview, tools }) {
   return (
     <Card className="project-card">
-      <Image
-        rounded
-        className="project-card-img m-3"
-        src={
-          name === "MovieApp"
-            ? MovieProjectImage
-            : name === "AhorrADAS"
-            ? AhorradasProjectImage
-            : name === "Generador de memes"
-            ? MemesProjectImage
-            : ""
-        }
-        alt="image project"
-      />
       <Card.Body>
         <Row>
           <Col>
