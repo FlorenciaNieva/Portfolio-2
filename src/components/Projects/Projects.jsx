@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import db from "../../../firestore.config";
+import { Container, Row, Col } from "react-bootstrap";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
 export default function Projects() {
   const [data, setData] = useState([]);
@@ -23,8 +25,26 @@ export default function Projects() {
   }, []);
 
   return (
-    <>
-      Projects
-    </>
+    <Container fluid className="container-projects d-flex flex-column">
+      <Row>
+        <Col>
+          <h2 className="text-gradient m-5">PROJECTS</h2>
+        </Col>
+      </Row>
+      <Row>
+        <Col className="d-flex flex-wrap justify-content-center">
+          {data.map((info) => (
+            <ProjectCard
+              name={info?.name}
+              repo={info?.repo}
+              link={info?.link}
+              overview={info?.overview}
+              tools={info?.tools}
+              key={info.id}
+            />
+          ))}
+        </Col>
+      </Row>
+    </Container>
   );
 }
