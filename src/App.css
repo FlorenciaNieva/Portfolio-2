@@ -136,35 +136,43 @@ nav .link:hover {
 
 .text-gradient {
   background: linear-gradient(to right, #45CFDD  0%, #b12cff 40%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background-clip: text;
   color: transparent;
   font-size: 2rem;
   font-weight: bold;
 }
 
+/* ----- Projects ----- */
+
+.container-projects {
+  background: radial-gradient(circle, #45CFDD  5%, #200E3A 60%);
+  min-height: 170vh;
+  display: flex;
+  align-items: center;
+}
+
 .project-card {
-  width: 30rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: transparent !important;
+  width: 20rem;
+  margin: 0px 10px 10px 10px;
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.project-card-subtitle {
-  font-size: 1rem;
-  color: #6c757d;
-  margin-bottom: 1rem;
+.project-card-img {
+  height: 150px;
 }
 
 .project-card-text {
   font-size: 0.9rem;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
