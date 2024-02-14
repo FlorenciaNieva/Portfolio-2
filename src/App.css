@@ -145,6 +145,13 @@ nav .link:hover {
 
 /* ----- Projects ----- */
 
+.container-projects {
+  background: radial-gradient(circle, #45CFDD  5%, #200E3A 60%);
+  min-height: 170vh;
+  display: flex;
+  align-items: center;
+}
+
 .project-card {
   position: relative;
   background-color: transparent !important;
