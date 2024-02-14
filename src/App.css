@@ -136,8 +136,7 @@ nav .link:hover {
 
 .text-gradient {
   background: linear-gradient(to right, #45CFDD  0%, #b12cff 40%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background-clip: text;
   color: transparent;
   font-size: 2rem;
   font-weight: bold;
