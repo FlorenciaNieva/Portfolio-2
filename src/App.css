@@ -176,3 +176,17 @@ nav .link:hover {
   color: #ffffff;
   margin-bottom: 1rem;
 }
+
+/* ----- Contact ----- */
+
+.container-contact {
+  min-height: 89vh;
+  background-color: #200e3a !important;
+}
+
+/* ------- Form ------- */
+
+.form-floating .form-control:focus {
+  border-color:  none !important; 
+  box-shadow: none;
+}
