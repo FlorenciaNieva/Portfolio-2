@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.svg";
 
-export default function Header() {
+export default function Header({ handleToggleMenu }) {
   return (
     <header>
       <Navbar data-bs-theme="dark" expand="sm" className="px-2">
@@ -14,7 +14,10 @@ export default function Header() {
           height="50"
           className="d-inline-block align-top"
         />
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          onClick={handleToggleMenu}
+          aria-controls="basic-navbar-nav"
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
             <Link to="/" className="link">
