@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "@formspree/react";
-import { Form, FloatingLabel, Button } from "react-bootstrap";
+import { Form, FloatingLabel, Button, Row, Col } from "react-bootstrap";
 
 export default function FormContact() {
   const [state, handleSubmit] = useForm("xdoqglvr");
@@ -11,20 +11,40 @@ export default function FormContact() {
 
   return (
     <form className="d-flex flex-column" onSubmit={handleSubmit}>
-      <FloatingLabel
-        data-bs-theme="dark"
-        label="Name"
-        className="floating-label mb-3"
-      >
-        <Form.Control
-          type="text"
-          name="name"
-          placeholder="Name"
-          className="form-control"
-          id="name"
-          autocomplete="off"
-        />
-      </FloatingLabel>
+      <Row>
+        <Col>
+          <FloatingLabel
+            data-bs-theme="dark"
+            label="Name"
+            className="floating-label mb-3"
+          >
+            <Form.Control
+              type="text"
+              name="name"
+              placeholder="Name"
+              className="form-control"
+              id="name"
+              autocomplete="off"
+            />
+          </FloatingLabel>
+        </Col>
+        <Col>
+          <FloatingLabel
+            data-bs-theme="dark"
+            label="Last Name"
+            className="floating-label mb-3"
+          >
+            <Form.Control
+              type="text"
+              name="name"
+              placeholder="Last Name"
+              className="form-control"
+              id="name"
+              autocomplete="off"
+            />
+          </FloatingLabel>
+        </Col>
+      </Row>
       <FloatingLabel
         data-bs-theme="dark"
         label="Email"
