@@ -190,3 +190,24 @@ nav .link:hover {
   border-color:  none !important; 
   box-shadow: none;
 }
+
+/* ------ Footer ------ */
+
+footer {
+  background-color: black;
+}
+
+.logo-footer {
+  width: 50px;
+}
+
+.icon-social {
+  padding: 10px;
+  border-radius: 100%;
+  border: 2px solid rgb(119, 119, 119);
+}
+.icon-social:hover {
+  fill: #b12cff;
+  background-color: white;
+  border: 2px solid white;
+}
