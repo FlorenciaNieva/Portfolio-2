@@ -13,6 +13,7 @@ header {
 nav .link {
   color: white;
   letter-spacing: 1px;
+  margin-right: 15px;
   text-decoration: none;
   padding: 3px 1px;
   background-position-y: -0%;
@@ -28,6 +29,15 @@ nav .link:hover {
 
 .navbar-toggler-icon {
   font-size: 0.8rem; 
+}
+
+.menu-open {
+  margin-top: 30vh !important;
+  transition: margin-top 0.4s ease;
+}
+
+.menu-close {
+  transition: margin-top 0.4s ease;
 }
 
 /* ------- Home ------- */

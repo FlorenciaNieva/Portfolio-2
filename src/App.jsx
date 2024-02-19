@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -9,15 +10,21 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header handleToggleMenu={handleToggleMenu} />
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/about-me" element={<AboutMe />}/>
-          <Route path="/projects" element={<Projects />}/>
-          <Route path="/contact" element={<Contact />}/>
+          <Route path="/" element={<Home menuOpen={menuOpen} />}/>
+          <Route path="/about-me" element={<AboutMe menuOpen={menuOpen} />}/>
+          <Route path="/projects" element={<Projects menuOpen={menuOpen} />}/>
+          <Route path="/contact" element={<Contact menuOpen={menuOpen} />}/>
         </Routes>
         <Footer />
       </BrowserRouter>
