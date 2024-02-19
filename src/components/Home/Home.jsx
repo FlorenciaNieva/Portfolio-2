@@ -7,23 +7,28 @@ export default function Home() {
   return (
     <>
       <Container fluid className="container-presentation">
-        <Row>
-          <Col>
-            <h3 className="sub-title-presentation">Hi! I'm</h3>
-            <Col className="d-flex text-animation">
-              <h1>Flor Nieva</h1>
-            </Col>
-            <h3 className="sub-title-presentation" style={{ fontFamily: "Dejavu Sans" }}>
-              Frontend Developer
-            </h3>
+        <Container>
+          <Row>
             <Col>
-              <Button className="button-animation" href="#skills">
-                <span className="button-text">View Projects</span>
-                <div className="fill-container"></div>
-              </Button>
+              <h3 className="sub-title-presentation">Hi! I'm</h3>
+              <Col className="d-flex text-animation">
+                <h1>Flor Nieva</h1>
+              </Col>
+              <h3
+                className="sub-title-presentation"
+                style={{ fontFamily: "Dejavu Sans" }}
+              >
+                Frontend Developer
+              </h3>
+              <Col>
+                <Button className="button-animation" href="#skills">
+                  <span className="button-text">View Projects</span>
+                  <div className="fill-container"></div>
+                </Button>
+              </Col>
             </Col>
-          </Col>
-        </Row>
+          </Row>
+        </Container>
       </Container>
     </>
   );
