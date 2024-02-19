@@ -33,11 +33,11 @@ nav .link:hover {
 
 .menu-open {
   margin-top: 30vh !important;
-  transition: margin-top 0.3s ease;
+  transition: margin-top 0.4s ease;
 }
 
 .menu-close {
-  transition: margin-top 0.3s ease;
+  transition: margin-top 0.4s ease;
 }
 
 /* ------- Home ------- */
