@@ -22,9 +22,9 @@ function App() {
         <Header handleToggleMenu={handleToggleMenu} />
         <Routes>
           <Route path="/" element={<Home menuOpen={menuOpen} />}/>
-          <Route path="/about-me" element={<AboutMe />}/>
-          <Route path="/projects" element={<Projects />}/>
-          <Route path="/contact" element={<Contact />}/>
+          <Route path="/about-me" element={<AboutMe menuOpen={menuOpen} />}/>
+          <Route path="/projects" element={<Projects menuOpen={menuOpen} />}/>
+          <Route path="/contact" element={<Contact menuOpen={menuOpen} />}/>
         </Routes>
         <Footer />
       </BrowserRouter>
