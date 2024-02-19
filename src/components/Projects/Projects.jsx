@@ -4,7 +4,7 @@ import db from "../../../firestore.config";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
-export default function Projects() {
+export default function Projects({ menuOpen }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Projects() {
 
   return (
     <Container fluid className="container-projects d-flex flex-column">
-      <Row>
+      <Row className={menuOpen ? "menu-open" : "menu-close"}>
         <Col>
           <h2 className="text-gradient m-5">PROJECTS</h2>
         </Col>
