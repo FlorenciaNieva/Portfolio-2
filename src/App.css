@@ -17,7 +17,7 @@ nav .link {
   text-decoration: none;
   padding: 3px 1px;
   background-position-y: -0%;
-  background-image: linear-gradient( #200e3a00 50%, #45CFDD 50%);
+  background-image: linear-gradient( #200e3a00 50%, #13aec7 50%);
   transition: background 500ms ease;
   background-size: 2px;
   background-size: auto 175%;
@@ -69,7 +69,7 @@ nav .link:hover {
     font-weight: bold;
     font-family: "Lucida Sans";
     font-size: 400%;
-    background: linear-gradient(to right, #45cfdd 50%, #b12cff 60%);
+    background: linear-gradient(to right, #13aec7 50%, #b12cff 60%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -93,7 +93,7 @@ nav .link:hover {
   padding: 10px 25px !important;
   border-radius: 100vw !important;
   background-color: transparent !important;
-  border: solid 1px #b12cff !important;
+  border: solid 1px #13aec7 !important;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
@@ -116,14 +116,13 @@ nav .link:hover {
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: #45cfdd;
+      background-color: #13aec7;
       border-radius: 50%;
       transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
       transform: translateY(-100%);
     }
   }
   &:hover {
-    transform: translateY(-4px);
     .fill-container {
       transform: translateY(-50%) rotate(0);
       &::after {
@@ -136,7 +135,7 @@ nav .link:hover {
 /* ----- About Me ----- */
 
 .container-about {
-  background-color: #200e3a;
+  background-color: #000133;
   padding-top: 100px;
 }
 
@@ -151,13 +150,12 @@ nav .link:hover {
 
 .letter-aqua {
   font-weight: bold;
-  color: #45CFDD;
+  color: #13aec7;
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #45CFDD  0%, #b12cff 40%);
   background-clip: text;
-  color: transparent;
+  color: #13aec7 ;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -165,7 +163,7 @@ nav .link:hover {
 /* ----- Projects ----- */
 
 .container-projects {
-  background: radial-gradient(circle, #45CFDD  5%, #200E3A 60%);
+  background: radial-gradient(circle, #13aec7  5%, #000133 60%);
   min-height: 170vh;
   display: flex;
   align-items: center;
@@ -201,7 +199,7 @@ nav .link:hover {
 
 .container-contact {
   min-height: 89vh;
-  background-color: #200e3a !important;
+  background-color: #000133;
 }
 
 /* ------- Form ------- */
@@ -226,8 +224,9 @@ footer {
   border-radius: 100%;
   border: 2px solid rgb(119, 119, 119);
 }
+
 .icon-social:hover {
-  fill: #b12cff;
+  fill: #13aec7;
   background-color: white;
   border: 2px solid white;
 }
