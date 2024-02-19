@@ -15,63 +15,67 @@ export default function FormContact() {
         <Col>
           <FloatingLabel
             data-bs-theme="dark"
-            label="Name"
+            label="Name *"
             className="floating-label mb-3"
           >
             <Form.Control
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Name *"
               className="form-control"
               id="name"
               autocomplete="off"
+              required
             />
           </FloatingLabel>
         </Col>
         <Col>
           <FloatingLabel
             data-bs-theme="dark"
-            label="Last Name"
+            label="Last Name *"
             className="floating-label mb-3"
           >
             <Form.Control
               type="text"
               name="name"
-              placeholder="Last Name"
+              placeholder="Last Name *"
               className="form-control"
               id="name"
               autocomplete="off"
+              required
             />
           </FloatingLabel>
         </Col>
       </Row>
       <FloatingLabel
         data-bs-theme="dark"
-        label="Email"
+        label="Email *"
         className="floating-label mb-3"
       >
         <Form.Control
           type="email"
           name="email"
-          placeholder="Email"
+          placeholder="Email *"
           className="form-control"
           id="email"
           autocomplete="off"
+          required
         />
       </FloatingLabel>
       <FloatingLabel
         data-bs-theme="dark"
-        label="Message"
+        label="Message *"
         className="floating-label"
       >
         <Form.Control
           as="textarea"
           type="textarea"
           name="message"
-          placeholder="Message"
+          placeholder="Message *"
           style={{ height: "100px" }}
           className="form-control"
           id="message"
+          required
         />
       </FloatingLabel>
       <div className="d-flex justify-content-center align-items-center">
