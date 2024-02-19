@@ -3,12 +3,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
-export default function Home() {
+export default function Home({ menuOpen }) {
   return (
     <>
       <Container fluid className="container-presentation">
         <Row>
-          <Col>
+          <Col className={menuOpen ? "menu-open" : "menu-close"}>
             <h3 className="sub-title-presentation">Hi! I'm</h3>
             <Col className="d-flex text-animation">
               <h1>Flor Nieva</h1>
