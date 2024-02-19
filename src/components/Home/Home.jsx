@@ -6,16 +6,16 @@ import Button from "react-bootstrap/Button";
 export default function Home() {
   return (
     <>
-      <Container fluid className="container-presentation">
+      <Container fluid className="container-home-background">
         <Container>
           <Row>
             <Col>
-              <h3 className="sub-title-presentation">Hi! I'm</h3>
+              <h3 className="sub-title-home">Hi! I'm</h3>
               <Col className="d-flex text-animation">
                 <h1>Flor Nieva</h1>
               </Col>
               <h3
-                className="sub-title-presentation"
+                className="sub-title-home"
                 style={{ fontFamily: "Dejavu Sans" }}
               >
                 Frontend Developer
