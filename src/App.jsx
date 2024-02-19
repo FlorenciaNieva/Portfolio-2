@@ -7,14 +7,21 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import { useState } from "react";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header handleToggleMenu={handleToggleMenu} />
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route path="/" element={<Home menuOpen={menuOpen} />}/>
           <Route path="/about-me" element={<AboutMe />}/>
           <Route path="/projects" element={<Projects />}/>
           <Route path="/contact" element={<Contact />}/>
