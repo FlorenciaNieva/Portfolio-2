@@ -74,11 +74,11 @@ export default function FormContact() {
           id="message"
         />
       </FloatingLabel>
-      <div>
+      <div className="d-flex justify-content-center align-items-center">
         <Button
           type="submit"
           disabled={state.submitting}
-          className="button-animation m-3"
+          className="button-animation mt-3"
         >
           <span className="button-text">Send Message</span>
           <div className="fill-container"></div>
