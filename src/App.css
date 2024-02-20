@@ -204,12 +204,19 @@ nav .link:hover {
 
 /* ------- Form ------- */
 
-.form-floating .form-control {
+.form-control {
   background-color: transparent !important;
 }
 
-.form-floating .form-control:focus {
-  border-color:  none !important; 
+.floating-label {
+  background-color: transparent !important;
+}
+
+.floating-label::before {
+  background-color: transparent !important;
+}
+
+.form-floating .form-control:focus { 
   box-shadow: none;
 }
 
