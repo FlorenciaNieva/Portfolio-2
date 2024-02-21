@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import FormContact from "../FormContact/FormContact";
 import { Row, Col } from "react-bootstrap";
-import AnimatedButton from "../AnimatedButton/AnimatedButton";
+import ArrowButton from "../ArrowButton/ArrowButton";
 
 export default function Contact({ menuOpen }) {
   return (
@@ -15,7 +15,7 @@ export default function Contact({ menuOpen }) {
             <Col lg="9">
               <FormContact />
               <div className="mt-5">
-                <AnimatedButton route="/" content="Go Back Home" />
+                <ArrowButton route="/" content="Go Back Home" />
               </div>
               
             </Col>

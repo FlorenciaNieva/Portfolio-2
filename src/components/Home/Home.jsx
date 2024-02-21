@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import AnimatedButton from "../AnimatedButton/AnimatedButton";
+import ArrowButton from "../ArrowButton/ArrowButton";
 
 export default function Home({ menuOpen }) {
   return (
@@ -17,7 +17,7 @@ export default function Home({ menuOpen }) {
                 </Col>
                 <h3 className="description-home">Frontend Developer</h3>
                 <Col>
-                  <AnimatedButton route="/about-me" content="See More About Me" />
+                  <ArrowButton route="/about-me" content="See More About Me" />
                 </Col>
               </Col>
           </Row>
