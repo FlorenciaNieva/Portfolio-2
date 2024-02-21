@@ -5,6 +5,7 @@ import Image from "react-bootstrap/Image";
 import ImageProfile from "../../assets/images/image-profile.png";
 import Skills from "../Skills/Skills";
 import Button from "react-bootstrap/Button";
+import AnimatedButton from "../AnimatedButton/AnimatedButton";
 
 export default function AboutMe({ menuOpen }) {
   return (
@@ -72,6 +73,9 @@ export default function AboutMe({ menuOpen }) {
         </Row>
       </Container>
       <Skills />
+      <Container>
+        <AnimatedButton route="/projects" content="Go to Projects" />
+      </Container>
     </Container>
   );
 }
