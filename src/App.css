@@ -177,6 +177,36 @@ nav .link:hover {
   font-weight: bold;
 }
 
+.card-soft-skill {
+  padding: 0px 30px 30px 30px;
+  width: 250px;
+  height: 150px !important;
+  background-color: #000133 !important;
+  background-image: radial-gradient(circle closest-corner at 50% 0, rgb(51, 153, 255, .25), rgb(112, 253, 174, 0));
+  font-weight: bold;
+  transition: transform .6s;
+}
+
+.card-soft-skill:hover {
+  transform: translate(0, -8px);
+}
+
+.soft-skill-icon {
+  top: -30px;
+  left: 85px;
+  z-index: 1;
+}
+
+.skill-badge {
+  display: inline-flex;
+  gap: 16px;
+  background-color: rgba(255, 255, 255, .05);
+  border-radius: 5px;
+  align-items: center;
+  margin: 4px;
+  padding: 8px 16px;
+}
+
 /* ----- Projects ----- */
 
 .container-projects {
