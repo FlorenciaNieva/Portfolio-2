@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
+import { GoArrowRight } from "react-icons/go";
 
 export default function Home({ menuOpen }) {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ export default function Home({ menuOpen }) {
                     className="button-animation"
                     onClick={() => navigate("/about-me")}
                   >
-                    <span className="button-text">See More About Me</span>
+                    <span className="button-text">See More About Me <GoArrowRight className="arrow-animation ml-2" fontSize="25px" /> </span>
                     <div className="fill-container"></div>
                   </Button>
                 </Col>
