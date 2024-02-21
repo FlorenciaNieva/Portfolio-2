@@ -132,6 +132,23 @@ nav .link:hover {
   }
 }
 
+.arrow-animation {
+  display: inline-block;
+  animation: arrow-animation 2s linear infinite;
+}
+
+@keyframes arrow-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /* ----- About Me ----- */
 
 .container-about {

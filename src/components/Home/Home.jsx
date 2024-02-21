@@ -2,8 +2,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom";
+import { GoArrowRight } from "react-icons/go";
 
 export default function Home({ menuOpen }) {
+  const navigate = useNavigate();
+
   return (
     <>
       <Container fluid className="container-home-background">
@@ -17,8 +21,11 @@ export default function Home({ menuOpen }) {
                 </Col>
                 <h3 className="description-home">Frontend Developer</h3>
                 <Col>
-                  <Button className="button-animation" href="#skills">
-                    <span className="button-text">View Projects</span>
+                  <Button
+                    className="button-animation"
+                    onClick={() => navigate("/about-me")}
+                  >
+                    <span className="button-text">See More About Me <GoArrowRight className="arrow-animation ml-2" fontSize="25px" /> </span>
                     <div className="fill-container"></div>
                   </Button>
                 </Col>
