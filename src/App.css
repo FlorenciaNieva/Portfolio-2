@@ -197,6 +197,16 @@ nav .link:hover {
   z-index: 1;
 }
 
+.skill-badge {
+  display: inline-flex;
+  gap: 16px;
+  background-color: rgba(255, 255, 255, .05);
+  border-radius: 5px;
+  align-items: center;
+  margin: 4px;
+  padding: 8px 16px;
+}
+
 /* ----- Projects ----- */
 
 .container-projects {
