@@ -6,6 +6,7 @@ import ImageProfile from "../../assets/images/image-profile.png";
 import Skills from "../Skills/Skills";
 import Button from "react-bootstrap/Button";
 import ArrowButton from "../ArrowButton/ArrowButton";
+import SoftSkills from "../SoftSkills/SoftSkills";
 
 export default function AboutMe({ menuOpen }) {
   return (
@@ -72,6 +73,7 @@ export default function AboutMe({ menuOpen }) {
           </Col>
         </Row>
       </Container>
+      <SoftSkills />
       <Skills />
       <Container>
         <ArrowButton route="/projects" content="Go to Projects" />
