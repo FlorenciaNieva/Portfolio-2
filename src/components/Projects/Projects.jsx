@@ -3,6 +3,7 @@ import { collection, getDocs } from "firebase/firestore";
 import db from "../../../firestore.config";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../ProjectCard/ProjectCard";
+import AnimatedButton from "../AnimatedButton/AnimatedButton";
 
 export default function Projects({ menuOpen }) {
   const [data, setData] = useState([]);
@@ -45,6 +46,10 @@ export default function Projects({ menuOpen }) {
           ))}
         </Col>
       </Row>
+      <Container>
+        <AnimatedButton route="/contact" content="Go to Contact" />
+      </Container>
     </Container>
+    
   );
 }
