@@ -5,8 +5,8 @@ import logo from "../../assets/logo/logo.svg";
 
 export default function Header({ handleToggleMenu }) {
   return (
-    <header>
-      <Navbar data-bs-theme="dark" expand="sm" className="px-2">
+    <header className="mt-2 px-5">
+      <Navbar data-bs-theme="dark" expand="sm" className="mx-5">
         <img
           alt="logo"
           src={logo}
