@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 export default function Header({ handleToggleMenu }) {
   return (
@@ -20,7 +21,7 @@ export default function Header({ handleToggleMenu }) {
           aria-controls="basic-navbar-nav"
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav>
+          <Nav className="mx-3">
             <Link to="/" className="link text-center">
               Home
             </Link>
@@ -34,16 +35,27 @@ export default function Header({ handleToggleMenu }) {
               Contact
             </Link>
           </Nav>
-          <div className="d-flex justify-content-center ms-auto mt-2">
-            <a href="https://github.com/FlorenciaNieva" target="_blank">
-              <FaGithub size="25px" />
+          <div className="d-flex justify-content-center ms-auto mt-2 mx-3">
+            <a
+              href="https://github.com/FlorenciaNieva"
+              target="_blank"
+              className="mx-2"
+            >
+              <FaGithub size="25px" aria-label="GitHub" />
             </a>
             <a
               href="https://www.linkedin.com/in/florencia-nievaa/"
               target="_blank"
-              className="mx-3"
+              className="mx-2"
             >
-              <FaLinkedin size="25px" />
+              <FaLinkedin size="25px" aria-label="Linkedin" />
+            </a>
+            <a
+              href="mailto:florencianieva930@gmail.com"
+              target="_blank"
+              className="mx-2"
+            >
+              <MdOutlineMailOutline size="25px" aria-label="Email" />
             </a>
           </div>
         </Navbar.Collapse>
