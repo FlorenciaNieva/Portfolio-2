@@ -12,13 +12,13 @@ export default function Footer() {
         <Image src={Logo} alt="logo" className="logo-footer mb-4" />
         <Nav className="d-flex justify-content-center align-items-center">
           <Nav.Link href="https://github.com/FlorenciaNieva">
-            <FaGithub fontSize="45px" className="icon-social" />
+            <FaGithub fontSize="45px" className="icon-social" aria-label="Git Hub" />
           </Nav.Link>
           <Nav.Link href="https://www.linkedin.com/in/florencia-nievaa/">
-            <FaLinkedin fontSize="45px" className="icon-social" />
+            <FaLinkedin fontSize="45px" className="icon-social" aria-label="Linkedin" />
           </Nav.Link>
           <Nav.Link href="mailto:florencianieva930@gmail.com">
-            <MdOutlineMailOutline fontSize="45px" className="icon-social" />
+            <MdOutlineMailOutline fontSize="45px" className="icon-social" aria-label="Email" />
           </Nav.Link>
         </Nav>
         <p className="mt-3">Made by Florencia Nieva</p>
