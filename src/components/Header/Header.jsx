@@ -21,16 +21,16 @@ export default function Header({ handleToggleMenu }) {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Link to="/" className="link">
+            <Link to="/" className="link text-center">
               Home
             </Link>
-            <Link to="/about-me" className="link">
+            <Link to="/about-me" className="link text-center">
               About me
             </Link>
-            <Link to="/projects" className="link">
+            <Link to="/projects" className="link text-center">
               Projects
             </Link>
-            <Link to="/contact" className="link">
+            <Link to="/contact" className="link text-center">
               Contact
             </Link>
           </Nav>
