@@ -46,7 +46,7 @@ export default function Projects({ menuOpen }) {
           ))}
         </Col>
       </Row>
-      <Container>
+      <Container className="mb-5">
         <ArrowButton route="/contact" content="Go to Contact" />
       </Container>
     </Container>
