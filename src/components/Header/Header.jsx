@@ -20,7 +20,7 @@ export default function Header({ handleToggleMenu }) {
           aria-controls="basic-navbar-nav"
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav>
+          <Nav className="mx-3">
             <Link to="/" className="link text-center">
               Home
             </Link>
