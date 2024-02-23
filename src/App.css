@@ -211,16 +211,19 @@ nav .link:hover {
 
 .container-projects {
   background: radial-gradient(circle, #13aec7  5%, #000133 60%);
-  min-height: 170vh;
   display: flex;
   align-items: center;
+}
+
+.container-spinner {
+  height: 55vh;
 }
 
 .project-card {
   position: relative;
   background-color: transparent !important;
-  width: 20rem;
-  margin: 0px 10px 10px 10px;
+  width: 22.2rem;
+  margin: 0px 10px 20px 10px;
   border: none !important;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   transition: transform 0.3s ease-in-out;

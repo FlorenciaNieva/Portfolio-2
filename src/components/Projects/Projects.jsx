@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import db from "../../../firestore.config";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import ArrowButton from "../ArrowButton/ArrowButton";
 
 export default function Projects({ menuOpen }) {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,6 +19,7 @@ export default function Projects({ menuOpen }) {
           ...doc.data(),
         }));
         setData(documents);
+        setLoading(false);
       } catch (error) {
         console.error("Error fetching data from Firestore:", error);
       }
@@ -29,27 +31,32 @@ export default function Projects({ menuOpen }) {
     <Container fluid className="container-projects d-flex flex-column">
       <Row className={menuOpen ? "menu-open" : "menu-close"}>
         <Col>
-          <h2 className="text-gradient m-5">PROJECTS</h2>
+          <h2 className="text-gradient m-5 pt-5">PROJECTS</h2>
         </Col>
       </Row>
       <Row>
         <Col className="d-flex flex-wrap justify-content-center">
-          {data.map((info) => (
-            <ProjectCard
-              name={info?.name}
-              repo={info?.repo}
-              link={info?.link}
-              overview={info?.overview}
-              tools={info?.tools}
-              key={info.id}
-            />
-          ))}
+          {loading ? (
+            <div className="container-spinner">
+              <Spinner animation="grow" />
+            </div>
+          ) : (
+            data.map((info) => (
+              <ProjectCard
+                name={info?.name}
+                repo={info?.repo}
+                link={info?.link}
+                overview={info?.overview}
+                tools={info?.tools}
+                key={info.id}
+              />
+            ))
+          )}
         </Col>
       </Row>
-      <Container>
+      <Container className="mb-5">
         <ArrowButton route="/contact" content="Go to Contact" />
       </Container>
     </Container>
-    
   );
 }
