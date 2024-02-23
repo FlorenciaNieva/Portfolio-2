@@ -215,6 +215,10 @@ nav .link:hover {
   align-items: center;
 }
 
+.container-spinner {
+  height: 55vh;
+}
+
 .project-card {
   position: relative;
   background-color: transparent !important;
