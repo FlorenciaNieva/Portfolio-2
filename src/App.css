@@ -211,7 +211,6 @@ nav .link:hover {
 
 .container-projects {
   background: radial-gradient(circle, #13aec7  5%, #000133 60%);
-  min-height: 170vh;
   display: flex;
   align-items: center;
 }
