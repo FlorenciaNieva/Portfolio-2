@@ -37,7 +37,7 @@ export default function Projects({ menuOpen }) {
       <Row>
         <Col className="d-flex flex-wrap justify-content-center">
           {loading ? (
-            <div>
+            <div className="container-spinner">
               <Spinner animation="grow" />
             </div>
           ) : (
