@@ -276,6 +276,17 @@ form {
   box-shadow: none;
 }
 
+.button-form {
+  background-color: #000133 !important;
+  border: 1px solid #13aec7 !important;
+  padding: 10px 25px !important;
+  border-radius: 100vw !important;
+}
+
+.button-form:hover, .button-form:focus, .button-form:active {
+  background-color: #13aec7 !important;
+}
+
 /* ------ Footer ------ */
 
 footer {
