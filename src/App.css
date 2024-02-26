@@ -5,11 +5,6 @@
 
 /* ------ Header ------ */
 
-header {
-  position: absolute;
-  width: 100%;
-}
-
 nav .link {
   color: white;
   letter-spacing: 1px;
