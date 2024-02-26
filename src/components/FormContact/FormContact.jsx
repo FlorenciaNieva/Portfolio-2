@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "@formspree/react";
 import { Form, FloatingLabel, Button, Row, Col } from "react-bootstrap";
+import { FiSend } from "react-icons/fi";
 
 export default function FormContact() {
   const [state, handleSubmit] = useForm("xdoqglvr");
@@ -82,10 +83,10 @@ export default function FormContact() {
         <Button
           type="submit"
           disabled={state.submitting}
-          className="button-animation mt-3"
+          className="button-form mt-3"
         >
-          <span className="button-text">Send Message</span>
-          <div className="fill-container"></div>
+          Send Message
+          <FiSend />
         </Button>
       </div>
     </form>
