@@ -40,6 +40,10 @@ nav .link:hover {
   transition: margin-top 0.4s ease;
 }
 
+.icon-header:hover {
+  fill: #13aec7;
+}
+
 /* ------- Home ------- */
 
 .container-home-background {

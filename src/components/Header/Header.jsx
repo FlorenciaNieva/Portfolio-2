@@ -41,21 +41,21 @@ export default function Header({ handleToggleMenu }) {
               target="_blank"
               className="mx-2"
             >
-              <FaGithub size="25px" aria-label="GitHub" />
+              <FaGithub size="25px" className="icon-header" aria-label="GitHub" />
             </a>
             <a
               href="https://www.linkedin.com/in/florencia-nievaa/"
               target="_blank"
               className="mx-2"
             >
-              <FaLinkedin size="25px" aria-label="Linkedin" />
+              <FaLinkedin size="25px" className="icon-header" aria-label="Linkedin" />
             </a>
             <a
               href="mailto:florencianieva930@gmail.com"
               target="_blank"
               className="mx-2"
             >
-              <MdOutlineMailOutline size="25px" aria-label="Email" />
+              <MdOutlineMailOutline size="25px" className="icon-header" aria-label="Email" />
             </a>
           </div>
         </Navbar.Collapse>
