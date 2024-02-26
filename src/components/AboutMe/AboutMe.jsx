@@ -75,7 +75,7 @@ export default function AboutMe({ menuOpen }) {
       </Container>
       <SoftSkills />
       <Skills />
-      <Container>
+      <Container className="mb-4">
         <ArrowButton route="/projects" content="Go to Projects" />
       </Container>
     </Container>
