@@ -301,13 +301,13 @@ footer {
   width: 50px;
 }
 
-.icon-social {
+.icon-footer {
   padding: 10px;
   border-radius: 100%;
   border: 2px solid rgb(119, 119, 119);
 }
 
-.icon-social:hover {
+.icon-footer:hover {
   fill: #13aec7;
   border: 2px solid #13aec7;
 }
