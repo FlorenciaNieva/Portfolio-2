@@ -9,17 +9,16 @@ export default function Home({ menuOpen }) {
       <Container fluid className="container-home-background">
         <Container className="container-home">
           <Row>
-            
-              <Col className={menuOpen ? "menu-open" : "menu-close"}>
-                <h3 className="subtitle-home">Hi! My name is</h3>
-                <Col className="d-flex text-animation">
-                  <h1>Florencia Nieva</h1>
-                </Col>
-                <h3 className="description-home">Frontend Developer</h3>
-                <Col>
-                  <ArrowButton route="/about-me" content="See More About Me" />
-                </Col>
+            <Col className={`mx-1 ${menuOpen ? "menu-open" : "menu-close"}`}>
+              <h3 className="subtitle-home">Hi! My name is</h3>
+              <Col className="d-flex text-animation">
+                <h1>Florencia Nieva</h1>
               </Col>
+              <h3 className="description-home">Frontend Developer</h3>
+              <Col>
+                <ArrowButton route="/about-me" content="See More About Me" />
+              </Col>
+            </Col>
           </Row>
         </Container>
       </Container>
