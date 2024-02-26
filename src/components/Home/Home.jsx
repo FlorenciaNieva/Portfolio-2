@@ -6,15 +6,15 @@ import ArrowButton from "../ArrowButton/ArrowButton";
 export default function Home({ menuOpen }) {
   return (
     <>
-      <Container fluid className="container-home-background">
-        <Container className="container-home">
+      <Container fluid className="home-background d-flex align-items-center min-vh-100">
+        <Container className="pt-5">
           <Row>
             <Col className={`mx-1 ${menuOpen ? "menu-open" : "menu-close"}`}>
-              <h3 className="subtitle-home">Hi! My name is</h3>
+              <h3 className="fs-5">Hi! My name is</h3>
               <Col className="d-flex text-animation">
                 <h1>Florencia Nieva</h1>
               </Col>
-              <h3 className="description-home">Frontend Developer</h3>
+              <h3 className="subtitle-home fs-1">Frontend Developer</h3>
               <Col>
                 <ArrowButton route="/about-me" content="See More About Me" />
               </Col>

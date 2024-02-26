@@ -11,7 +11,7 @@ export default function FormContact() {
   }
 
   return (
-    <form className="d-flex flex-column" onSubmit={handleSubmit}>
+    <form className="d-flex flex-column p-5" onSubmit={handleSubmit}>
       <Row>
         <Col>
           <FloatingLabel

@@ -28,10 +28,10 @@ export default function Projects({ menuOpen }) {
   }, []);
 
   return (
-    <Container fluid className="container-projects d-flex flex-column">
+    <Container fluid className="container-projects d-flex flex-column align-items-center">
       <Row className={menuOpen ? "menu-open" : "menu-close"}>
         <Col>
-          <h2 className="text-gradient m-5 pt-5">PROJECTS</h2>
+          <h2 className="letter-color m-5 pt-5">PROJECTS</h2>
         </Col>
       </Row>
       <Row>

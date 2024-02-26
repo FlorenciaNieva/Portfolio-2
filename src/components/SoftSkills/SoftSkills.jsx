@@ -8,7 +8,7 @@ export default function SoftSkills() {
     <Container>
       <Row>
         <Col className="d-flex justify-content-center align-items-center">
-          <h2 className="text-gradient mb-5">SOFT SKILLS</h2>
+          <h2 className="letter-color mb-5">SOFT SKILLS</h2>
         </Col>
       </Row>
       <Row className="mt-5 mb-5">

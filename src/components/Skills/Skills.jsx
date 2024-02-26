@@ -26,11 +26,11 @@ export default function Skills() {
     <Container className="d-flex justify-content-center text-center mb-5">
       <Row className="d-flex flex-column">
         <Col>
-          <div className="text-gradient">SKILLS</div>
+          <h2 className="letter-color">SKILLS</h2>
         </Col>
         <Col className="d-flex flex-column p-5">
           <div>Frontend Development:</div>
-          <Col className="d-flex flex-wrap justify-content-center m-3">
+          <Col className="d-flex flex-wrap justify-content-cente m-3">
             <div className="skill-badge">
               <FaHtml5 /> HTML5
             </div>

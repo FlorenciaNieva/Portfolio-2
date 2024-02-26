@@ -7,7 +7,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 
 export default function Header({ handleToggleMenu }) {
   return (
-    <header>
+    <header className="w-100 position-absolute">
       <Navbar data-bs-theme="dark" expand="sm" className="mx-4 mt-2">
         <img
           alt="logo"
@@ -19,6 +19,7 @@ export default function Header({ handleToggleMenu }) {
         <Navbar.Toggle
           onClick={handleToggleMenu}
           aria-controls="basic-navbar-nav"
+          className="fs-6"
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-3">
