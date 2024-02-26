@@ -6,7 +6,7 @@ import ArrowButton from "../ArrowButton/ArrowButton";
 export default function Home({ menuOpen }) {
   return (
     <>
-      <Container fluid className="container-home-background">
+      <Container fluid className="home-background d-flex align-items-center min-vh-100">
         <Container className="container-home">
           <Row>
             <Col className={`mx-1 ${menuOpen ? "menu-open" : "menu-close"}`}>
