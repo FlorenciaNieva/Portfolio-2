@@ -36,7 +36,7 @@ export default function ProjectCard({ name, repo, link, overview, tools }) {
             </a>
           </Col>
         </Row>
-        <p className="project-card-text">{overview}</p>
+        <p className="fs-6">{overview}</p>
         <p className="d-flex justify-content-center align-items-center">
           {tools.map((tool) => (
             <>

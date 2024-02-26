@@ -18,7 +18,7 @@ export default function AboutMe({ menuOpen }) {
               src={ImageProfile}
               alt="profile image"
               roundedCircle
-              className="img-profile"
+              className="img-profile mb-2"
             />
             <Button className="button-animation mb-5" href="#skills">
               <span className="button-text">Download CV</span>
@@ -26,7 +26,7 @@ export default function AboutMe({ menuOpen }) {
             </Button>
           </Col>
           <Col className="about-me">
-            <h2 className="text-gradient">ABOUT ME</h2>
+            <h2 className="letter-color">ABOUT ME</h2>
             <p>
               Hello! my name is Florencia Nieva. I am a passionate
               Frontend Developer Junior residing in Buenos Aires, Argentina. I
@@ -43,13 +43,13 @@ export default function AboutMe({ menuOpen }) {
             <Row>
               <Col>
                 <p>
-                  <span className="letter-aqua">
+                  <span className="letter-color">
                     Name:
                   </span>{" "}
                   Florencia Nieva
                 </p>
                 <p>
-                  <span className="letter-aqua">
+                  <span className="letter-color">
                     Age:
                   </span>{" "}
                   18
@@ -57,13 +57,13 @@ export default function AboutMe({ menuOpen }) {
               </Col>
               <Col>
                 <p>
-                  <span className="letter-aqua">
+                  <span className="letter-color">
                     Nationality:
                   </span>{" "}
                   Argentinian
                 </p>
                 <p>
-                  <span className="letter-aqua">
+                  <span className="letter-color">
                     English Level:
                   </span>{" "}
                   A2

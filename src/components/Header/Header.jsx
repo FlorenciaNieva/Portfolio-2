@@ -19,6 +19,7 @@ export default function Header({ handleToggleMenu }) {
         <Navbar.Toggle
           onClick={handleToggleMenu}
           aria-controls="basic-navbar-nav"
+          className="fs-6"
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-3">
