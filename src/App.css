@@ -22,6 +22,12 @@ nav .link:hover {
   background-position-y: 100%;
 }
 
+.header-toggle:focus,
+.header-toggle:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .menu-open {
   margin-top: 30vh !important;
   transition: margin-top 0.4s ease;
