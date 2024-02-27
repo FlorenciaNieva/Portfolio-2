@@ -5,7 +5,7 @@ import logo from "../../assets/logo/logo.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 
-export default function Header({ handleToggleMenu }) {
+export default function Header({ handleToggleMenu, menuOpen }) {
   return (
     <header className="w-100 position-absolute">
       <Navbar data-bs-theme="dark" expand="sm" className="mx-4 mt-2">
