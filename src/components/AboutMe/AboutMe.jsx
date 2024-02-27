@@ -18,14 +18,10 @@ export default function AboutMe({ menuOpen }) {
               src={ImageProfile}
               alt="profile image"
               roundedCircle
-              className="img-profile mb-2"
+              className="img-profile mb-5"
             />
-            <Button className="button-animation mb-5" href="#skills">
-              <span className="button-text">Download CV</span>
-              <div className="fill-container"></div>
-            </Button>
           </Col>
-          <Col className="about-me">
+          <Col className="about-me mb-5">
             <h2 className="letter-color">ABOUT ME</h2>
             <p>
               Hello! my name is Florencia Nieva. I am a passionate
