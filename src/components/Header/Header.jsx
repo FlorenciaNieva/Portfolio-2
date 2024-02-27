@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { IoCloseSharp } from "react-icons/io5";
 
-export default function Header({ handleToggleMenu }) {
+export default function Header({ handleToggleMenu, menuOpen }) {
   return (
     <header className="w-100 position-absolute">
       <Navbar data-bs-theme="dark" expand="sm" className="mx-4 mt-2">
@@ -19,8 +20,10 @@ export default function Header({ handleToggleMenu }) {
         <Navbar.Toggle
           onClick={handleToggleMenu}
           aria-controls="basic-navbar-nav"
-          className="fs-6"
-        />
+          className="header-toggle fs-6"
+        >
+          {menuOpen ? <span><IoCloseSharp /></span> : <span>☰</span>}
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-3">
             <Link to="/" className="link text-center">

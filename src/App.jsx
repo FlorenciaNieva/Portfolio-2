@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header handleToggleMenu={handleToggleMenu} />
+        <Header handleToggleMenu={handleToggleMenu} menuOpen={menuOpen} />
         <Routes>
           <Route path="/" element={<Home menuOpen={menuOpen} />}/>
           <Route path="/about-me" element={<AboutMe menuOpen={menuOpen} />}/>
