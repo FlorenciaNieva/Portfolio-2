@@ -25,7 +25,7 @@ export default function FormContact() {
               placeholder="Name *"
               className="form-control"
               id="name"
-              autocomplete="off"
+              autoComplete="off"
               required
             />
           </FloatingLabel>
@@ -42,7 +42,7 @@ export default function FormContact() {
               placeholder="Last Name *"
               className="form-control"
               id="name"
-              autocomplete="off"
+              autoComplete="off"
               required
             />
           </FloatingLabel>
@@ -59,7 +59,7 @@ export default function FormContact() {
           placeholder="Email *"
           className="form-control"
           id="email"
-          autocomplete="off"
+          autoComplete="off"
           required
         />
       </FloatingLabel>
