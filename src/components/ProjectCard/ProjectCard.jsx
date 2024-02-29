@@ -1,23 +1,9 @@
-import { Card, Badge, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Card, Row, Col } from "react-bootstrap";
 import {
   FaGithub,
-  FaExternalLinkAlt,
-  FaHtml5,
-  FaGitAlt,
-  FaCss3Alt,
-  FaReact,
-  FaNpm,
+  FaExternalLinkAlt
 } from "react-icons/fa";
-import {
-  SiJavascript,
-  SiChakraui,
-  SiVisualstudiocode,
-  SiGithubpages,
-  SiVercel,
-  SiBulma,
-  SiThemoviedatabase,
-  SiVite,
-} from "react-icons/si";
 
 export default function ProjectCard({ name, repo, link, overview, tools }) {
   return (
@@ -36,45 +22,17 @@ export default function ProjectCard({ name, repo, link, overview, tools }) {
             </a>
           </Col>
         </Row>
-        <p className="fs-6">{overview}</p>
-        <p className="d-flex justify-content-center align-items-center">
-          {tools.map((tool) => (
-            <>
-              {tool === "HTML5" ? (
-                <FaHtml5 className="m-1" fontSize="25px" />
-              ) : tool === "CSS3" ? (
-                <FaCss3Alt className="m-1" fontSize="25px" />
-              ) : tool === "GIT" ? (
-                <FaGitAlt className="m-1" fontSize="25px" />
-              ) : tool === "GitHub Pages" ? (
-                <SiGithubpages className="m-1" fontSize="50px" />
-              ) : tool === "Visual Studio Code" ? (
-                <SiVisualstudiocode className="m-1" fontSize="25px" />
-              ) : tool === "JavaScript" ? (
-                <SiJavascript className="m-1" fontSize="25px" />
-              ) : tool === "Chakra UI" ? (
-                <SiChakraui className="m-1" fontSize="25px" />
-              ) : tool === "Bulma" ? (
-                <SiBulma className="m-1" fontSize="25px" />
-              ) : tool === "Vercel" ? (
-                <SiVercel className="m-1" fontSize="25px" />
-              ) : tool === "NPM" ? (
-                <FaNpm className="m-1" fontSize="25px" />
-              ) : tool === "React" ? (
-                <FaReact className="m-1" fontSize="25px" />
-              ) : tool === "Vite" ? (
-                <SiVite className="m-1" fontSize="25px" />
-              ) : tool === "The Movie DB" ? (
-                <SiThemoviedatabase className="m-1" fontSize="25px" />
-              ) : (
-                <Badge bg="secondary" className="m-1">
-                  {tool}
-                </Badge>
-              )}
-            </>
-          ))}
-        </p>
+        <p className="fs-6 m-0">{overview}</p>
       </Card.Body>
+      <Row>
+        <Col className="m-2">
+          {tools.map((tool, index) => (
+            <React.Fragment key={index}>
+              <div className="tools-badge">{tool}</div>
+            </React.Fragment>
+          ))}
+        </Col>
+      </Row>
     </Card>
   );
 }
