@@ -37,44 +37,48 @@ export default function ProjectCard({ name, repo, link, overview, tools }) {
           </Col>
         </Row>
         <p className="fs-6">{overview}</p>
-        <p className="d-flex justify-content-center align-items-center">
-          {tools.map((tool) => (
-            <>
-              {tool === "HTML5" ? (
-                <FaHtml5 className="m-1" fontSize="25px" />
-              ) : tool === "CSS3" ? (
-                <FaCss3Alt className="m-1" fontSize="25px" />
-              ) : tool === "GIT" ? (
-                <FaGitAlt className="m-1" fontSize="25px" />
-              ) : tool === "GitHub Pages" ? (
-                <SiGithubpages className="m-1" fontSize="50px" />
-              ) : tool === "Visual Studio Code" ? (
-                <SiVisualstudiocode className="m-1" fontSize="25px" />
-              ) : tool === "JavaScript" ? (
-                <SiJavascript className="m-1" fontSize="25px" />
-              ) : tool === "Chakra UI" ? (
-                <SiChakraui className="m-1" fontSize="25px" />
-              ) : tool === "Bulma" ? (
-                <SiBulma className="m-1" fontSize="25px" />
-              ) : tool === "Vercel" ? (
-                <SiVercel className="m-1" fontSize="25px" />
-              ) : tool === "NPM" ? (
-                <FaNpm className="m-1" fontSize="25px" />
-              ) : tool === "React" ? (
-                <FaReact className="m-1" fontSize="25px" />
-              ) : tool === "Vite" ? (
-                <SiVite className="m-1" fontSize="25px" />
-              ) : tool === "The Movie DB" ? (
-                <SiThemoviedatabase className="m-1" fontSize="25px" />
-              ) : (
-                <Badge bg="secondary" className="m-1">
-                  {tool}
-                </Badge>
-              )}
-            </>
-          ))}
-        </p>
       </Card.Body>
+      <Row>
+        <Col className="mx-3">
+          <p className="fs-5">
+            {tools.map((tool) => (
+              <>
+                {tool === "HTML5" ? (
+                  <FaHtml5 className="m-1" />
+                ) : tool === "CSS3" ? (
+                  <FaCss3Alt className="m-1" />
+                ) : tool === "GIT" ? (
+                  <FaGitAlt className="m-1" />
+                ) : tool === "GitHub Pages" ? (
+                  <SiGithubpages className="m-1" />
+                ) : tool === "Visual Studio Code" ? (
+                  <SiVisualstudiocode className="m-1" />
+                ) : tool === "JavaScript" ? (
+                  <SiJavascript className="m-1" />
+                ) : tool === "Chakra UI" ? (
+                  <SiChakraui className="m-1" />
+                ) : tool === "Bulma" ? (
+                  <SiBulma className="m-1" />
+                ) : tool === "Vercel" ? (
+                  <SiVercel className="m-1" />
+                ) : tool === "NPM" ? (
+                  <FaNpm className="m-1" />
+                ) : tool === "React" ? (
+                  <FaReact className="m-1" />
+                ) : tool === "Vite" ? (
+                  <SiVite className="m-1" />
+                ) : tool === "The Movie DB" ? (
+                  <SiThemoviedatabase className="m-1" />
+                ) : (
+                  <Badge bg="secondary" className="m-1">
+                    {tool}
+                  </Badge>
+                )}
+              </>
+            ))}
+          </p>
+        </Col>
+      </Row>
     </Card>
   );
 }
