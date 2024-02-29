@@ -1,3 +1,4 @@
+import React from "react";
 import { Card, Badge, Row, Col } from "react-bootstrap";
 import {
   FaGithub,
@@ -41,8 +42,8 @@ export default function ProjectCard({ name, repo, link, overview, tools }) {
       <Row>
         <Col className="mx-3">
           <p className="fs-5">
-            {tools.map((tool) => (
-              <>
+            {tools.map((tool, index) => (
+              <React.Fragment key={index}>
                 {tool === "HTML5" ? (
                   <FaHtml5 className="m-1" />
                 ) : tool === "CSS3" ? (
@@ -74,7 +75,7 @@ export default function ProjectCard({ name, repo, link, overview, tools }) {
                     {tool}
                   </Badge>
                 )}
-              </>
+              </React.Fragment>
             ))}
           </p>
         </Col>
