@@ -10,7 +10,7 @@ import SoftSkills from "../SoftSkills/SoftSkills";
 
 export default function AboutMe({ menuOpen }) {
   return (
-    <Container fluid className="container-about pb-4">
+    <Container fluid className="background container-about pb-4">
       <Container className="pb-5">
         <Row className={menuOpen ? "menu-open" : "menu-close"}>
           <Col className="d-flex flex-column justify-content-center align-items-center">
