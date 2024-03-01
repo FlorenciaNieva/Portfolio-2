@@ -30,7 +30,7 @@ export default function Skills() {
         </Col>
         <Col className="d-flex flex-column p-5">
           <div>Frontend Development:</div>
-          <Col className="d-flex flex-wrap justify-content-cente m-3">
+          <Col className="d-flex flex-wrap justify-content-center m-3">
             <div className="skill-badge">
               <FaHtml5 /> HTML5
             </div>
