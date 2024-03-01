@@ -7,9 +7,9 @@ import { MdOutlineMailOutline } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="text-center pt-5 pb-3">
+    <footer className="text-center pb-3">
       <Container>
-        <Image src={Logo} alt="logo" className="logo-footer mb-4" />
+        <Image src={Logo} alt="logo" className="logo-footer" />
         <Nav className="d-flex justify-content-center align-items-center">
           <Nav.Link href="https://github.com/FlorenciaNieva">
             <FaGithub fontSize="45px" className="icon-footer" aria-label="Git Hub" />
