@@ -13,7 +13,6 @@ export default function Header({ handleToggleMenu, menuOpen }) {
           alt="logo"
           src={logo}
           width="80"
-          className="d-inline-block align-top"
         />
         <Navbar.Toggle
           onClick={handleToggleMenu}
