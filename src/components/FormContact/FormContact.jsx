@@ -13,7 +13,7 @@ export default function FormContact() {
   return (
     <form className="d-flex flex-column p-5" onSubmit={handleSubmit}>
       <Row>
-        <Col>
+        <Col sm>
           <FloatingLabel
             data-bs-theme="dark"
             label="Name *"
@@ -38,10 +38,10 @@ export default function FormContact() {
           >
             <Form.Control
               type="text"
-              name="name"
+              name="lastName"
               placeholder="Last Name *"
               className="form-control"
-              id="name"
+              id="lastName"
               autoComplete="off"
               required
             />
