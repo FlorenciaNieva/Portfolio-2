@@ -1,5 +1,4 @@
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Nav, Navbar, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -9,12 +8,11 @@ import { IoCloseSharp } from "react-icons/io5";
 export default function Header({ handleToggleMenu, menuOpen }) {
   return (
     <header className="w-100 position-absolute">
-      <Navbar data-bs-theme="dark" expand="sm" className="mx-4 mt-2">
-        <img
+      <Navbar data-bs-theme="dark" expand="sm" className="mx-4">
+        <Image
           alt="logo"
           src={logo}
           width="80"
-          height="50"
           className="d-inline-block align-top"
         />
         <Navbar.Toggle
