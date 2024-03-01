@@ -14,7 +14,7 @@ export default function Home({ menuOpen }) {
               <Col className="d-flex text-animation">
                 <h1>Florencia Nieva</h1>
               </Col>
-              <h3 className="subtitle-home fs-1">Frontend Developer</h3>
+              <h3 className="fs-1">Frontend Developer</h3>
               <Col>
                 <ArrowButton route="/about-me" content="See More About Me" />
               </Col>
