@@ -18,6 +18,7 @@ import {
   SiFirebase,
   SiGithubpages,
   SiStyledcomponents,
+  SiAxios
 } from "react-icons/si";
 import { MdOutlinePhonelink } from "react-icons/md";
 
@@ -75,6 +76,9 @@ export default function Skills() {
             </div>
             <div className="skill-badge">
               <FaNpm /> NPM
+            </div>
+            <div className="skill-badge">
+              <SiAxios /> Axios
             </div>
           </Col>
           <div>Deployment and Hosting:</div>
