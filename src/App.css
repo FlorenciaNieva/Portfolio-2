@@ -281,3 +281,9 @@ footer {
   fill: #13aec7;
   border: 2px solid #13aec7;
 }
+
+@media (width <= 575px) {
+  .menu-open {
+    margin-top: 23vh !important;
+  }
+}
