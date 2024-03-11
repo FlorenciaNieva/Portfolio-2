@@ -21,7 +21,9 @@ export default function Footer() {
             <MdOutlineMailOutline fontSize="45px" className="icon-footer" aria-label="Email" />
           </Nav.Link>
         </Nav>
-        <p className="mt-3">Made by Florencia Nieva</p>
+        <a href="https://github.com/FlorenciaNieva/Portfolio" target="_blank" className="mt-3">
+          Designed and  Built by Florencia Nieva
+        </a>
       </Container>
     </footer>
   );

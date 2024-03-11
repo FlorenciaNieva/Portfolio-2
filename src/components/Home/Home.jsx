@@ -9,7 +9,7 @@ export default function Home({ menuOpen }) {
       <Container fluid className="background d-flex align-items-center min-vh-100 pt-5">
         <Container className="pt-5">
           <Row>
-            <Col className={menuOpen ? "menu-open" : "menu-close"}>
+            <Col>
               <h3 className="fs-5">Hi! My name is</h3>
               <Col className="d-flex text-animation">
                 <h1>Florencia Nieva</h1>
