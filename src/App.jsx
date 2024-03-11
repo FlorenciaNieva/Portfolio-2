@@ -8,6 +8,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Error from "./components/Error/Error";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       <BrowserRouter>
         <Header handleToggleMenu={handleToggleMenu} menuOpen={menuOpen} />
         <Routes>
+          <Route path="*" element={<Error />} />
           <Route path="/" element={<Home menuOpen={menuOpen} />}/>
           <Route path="/about-me" element={<AboutMe menuOpen={menuOpen} />}/>
           <Route path="/projects" element={<Projects menuOpen={menuOpen} />}/>
