@@ -14,7 +14,7 @@ export default function Header({ handleToggleMenu, menuOpen }) {
           <Navbar.Toggle
             onClick={handleToggleMenu}
             aria-controls="basic-navbar-nav"
-            className="header-toggle fs-6"
+            className="header-toggle"
           >
             {menuOpen ? (
               <span>
