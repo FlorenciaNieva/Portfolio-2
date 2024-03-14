@@ -16,14 +16,24 @@ export default function Home() {
         <Container className="pt-5">
           <Row>
             <Col>
-              <h3 className="fs-5">
+              <h3 className="fs-5" data-aos="fade-up" data-aos-duration="1400">
                 {isEnglish ? "Hi! My name is" : "¡Hola! Mi nombre es"}
               </h3>
-              <Col className="d-flex text-animation">
+              <Col
+                className="d-flex text-animation"
+                data-aos="fade-up"
+                data-aos-duration="1600"
+              >
                 <h1>Florencia Nieva</h1>
               </Col>
-              <h3 className="fs-1">Frontend Developer</h3>
-              <div className="mt-3 mb-3">
+              <h3 className="fs-1" data-aos="fade-up" data-aos-duration="1800">
+                Frontend Developer
+              </h3>
+              <div
+                className="mt-3 mb-3"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 <a
                   href="https://github.com/FlorenciaNieva"
                   target="_blank"
@@ -58,7 +68,7 @@ export default function Home() {
                   />
                 </a>
               </div>
-              <Col>
+              <Col data-aos="fade-up" data-aos-duration="2200">
                 <ArrowButton
                   route="/about-me"
                   content={isEnglish ? "See More About Me" : "Ver Más Sobre Mi"}

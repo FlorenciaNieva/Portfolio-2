@@ -28,7 +28,12 @@ export default function Skills() {
 
   return (
     <Container className="d-flex justify-content-center text-center mb-5">
-      <Row className="d-flex flex-column">
+      <Row
+        className="d-flex flex-column"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
         <Col>
           <h2 className="letter-color">
             {isEnglish ? "SKILLS" : "HABILIDADES"}

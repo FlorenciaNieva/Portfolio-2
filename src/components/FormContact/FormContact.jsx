@@ -19,7 +19,12 @@ export default function FormContact() {
   }
 
   return (
-    <form className="d-flex flex-column p-5 mt-5" onSubmit={handleSubmit}>
+    <form
+      className="d-flex flex-column p-5 mt-5"
+      onSubmit={handleSubmit}
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <Row>
         <Col sm>
           <FloatingLabel
