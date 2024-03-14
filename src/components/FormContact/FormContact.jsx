@@ -91,7 +91,7 @@ export default function FormContact() {
         <Button
           type="submit"
           disabled={state.submitting}
-          className="button-form mt-3"
+          className="button-simple mt-3"
         >
           {isEnglish ? ('Send Message') : ('Enviar Mensaje')}
           {" "}

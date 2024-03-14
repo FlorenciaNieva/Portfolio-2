@@ -1,8 +1,6 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import { Container, Col, Row, Image, Button } from "react-bootstrap";
 import ImageProfile from "../../assets/images/image-profile.png";
+import { FaDownload } from "react-icons/fa";
 import Skills from "../Skills/Skills";
 import ArrowButton from "../ArrowButton/ArrowButton";
 import SoftSkills from "../SoftSkills/SoftSkills";
@@ -20,8 +18,22 @@ export default function AboutMe({ menuOpen }) {
               src={ImageProfile}
               alt="profile image"
               roundedCircle
-              className="img-profile mb-5"
+              className="img-profile"
             />
+            <div className="d-flex justify-content-center align-items-center mb-5">
+              <Button
+                as="a"
+                className="button-simple mt-3"
+                href={
+                  isEnglish
+                    ? "https://drive.google.com/file/d/13H95G6kE9-1OvQ74Cmz0Q-T4exlfBDj3/view?usp=sharing"
+                    : "https://drive.google.com/file/d/1tCNB-iWmnMrKJ3Xp9asaDhwnk9VDGVjb/view?usp=sharing"
+                }
+                target="_blank"
+              >
+                {isEnglish ? "Download CV" : "Descargar CV"} <FaDownload />
+              </Button>
+            </div>
           </Col>
           <Col className="about-me mb-5">
             <h2 className="letter-color">
