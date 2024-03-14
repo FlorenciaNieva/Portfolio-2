@@ -41,7 +41,7 @@ export default function Header({ handleToggleMenu, menuOpen }) {
               </Link>
             </Nav>
             <div className="d-flex justify-content-center ms-auto mt-2">
-              <a onClick={toggleLanguage}>{isEnglish ? "EN" : "ES"}</a>
+              <a onClick={toggleLanguage} className="btn-language">{isEnglish ? "EN" : "ES"}</a>
             </div>
           </Navbar.Collapse>
         </Navbar>
