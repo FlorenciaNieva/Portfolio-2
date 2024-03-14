@@ -46,7 +46,7 @@ export default function Projects({ menuOpen }) {
                 <Spinner animation="grow" />
               </div>
             ) : (
-              data.map((info) => (
+              data.map((info, index) => (
                 <ProjectCard
                   name={info?.name}
                   repo={info?.repo}
@@ -54,6 +54,7 @@ export default function Projects({ menuOpen }) {
                   overview={isEnglish ? info?.overview : info?.overviewEs}
                   tools={info?.tools}
                   key={info.id}
+                  duration={(index + 1) * 400}
                 />
               ))
             )}
