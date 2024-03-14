@@ -1,6 +1,4 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
 import ArrowButton from "../ArrowButton/ArrowButton";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -19,7 +17,7 @@ export default function Home() {
           <Row>
             <Col>
               <h3 className="fs-5">
-                {isEnglish ? ('Hi! My name is') : ('¡Hola! Mi nombre es')}
+                {isEnglish ? "Hi! My name is" : "¡Hola! Mi nombre es"}
               </h3>
               <Col className="d-flex text-animation">
                 <h1>Florencia Nieva</h1>
@@ -61,7 +59,10 @@ export default function Home() {
                 </a>
               </div>
               <Col>
-                <ArrowButton route="/about-me" content={isEnglish ? ('See More About Me') : ('Ver Más Sobre Mi')} />
+                <ArrowButton
+                  route="/about-me"
+                  content={isEnglish ? "See More About Me" : "Ver Más Sobre Mi"}
+                />
               </Col>
             </Col>
           </Row>

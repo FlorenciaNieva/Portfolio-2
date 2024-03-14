@@ -35,7 +35,7 @@ export default function Projects({ menuOpen }) {
         <Row className={menuOpen ? "menu-open" : "menu-close"}>
           <Col>
             <h2 className="letter-color m-5 pt-5">
-              {isEnglish ? ('PROJECTS') : ('PROYECTOS')}
+              {isEnglish ? "PROJECTS" : "PROYECTOS"}
             </h2>
           </Col>
         </Row>
@@ -60,7 +60,10 @@ export default function Projects({ menuOpen }) {
           </Col>
         </Row>
         <Container className="mb-5">
-          <ArrowButton route="/contact" content={isEnglish ? ('Go to Contact') : ('Ir a Contacto')} />
+          <ArrowButton
+            route="/contact"
+            content={isEnglish ? "Go to Contact" : "Ir a Contacto"}
+          />
         </Container>
       </Container>
     </Container>

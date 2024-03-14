@@ -37,32 +37,30 @@ export default function AboutMe({ menuOpen }) {
           </Col>
           <Col className="about-me mb-5">
             <h2 className="letter-color">
-              {isEnglish ? ('ABOUT ME') : ('SOBRE MI')}
+              {isEnglish ? "ABOUT ME" : "SOBRE MI"}
             </h2>
             <p>
-              {isEnglish 
-                ? ('Hello! my name is Florencia Nieva. I am a passionate Frontend Developer Junior residing in Buenos Aires, Argentina.I finished my Frontend Development degree at ADA ITW and I am constantly expanding my knowledge in this field. Currently, I am at an A2 level English and continue to refine my skills in it.') 
-                : ('¡Hola! Mi nombre es Florencia Nieva. soy una apasionada Desarrolladora Frontend Junior con residencia en Buenos Aires, Argentina. Finalice la Carrera de Desarrollo Frontend en ADA ITW y estoy ampliando constantemente mis conocimientos en este campo. Actualmente estoy en un nivel A2 en el idioma inglés y continuo perfeccionando mi habilidades en el idioma.')
-              }
+              {isEnglish
+                ? "Hello! my name is Florencia Nieva. I am a passionate Frontend Developer Junior residing in Buenos Aires, Argentina.I finished my Frontend Development degree at ADA ITW and I am constantly expanding my knowledge in this field. Currently, I am at an A2 level English and continue to refine my skills in it."
+                : "¡Hola! Mi nombre es Florencia Nieva. soy una apasionada Desarrolladora Frontend Junior con residencia en Buenos Aires, Argentina. Finalice la Carrera de Desarrollo Frontend en ADA ITW y estoy ampliando constantemente mis conocimientos en este campo. Actualmente estoy en un nivel A2 en el idioma inglés y continuo perfeccionando mi habilidades en el idioma."}
             </p>
             <p>
-              {isEnglish 
-                ? ('I am actively seeking job opportunities that will allow me to deepen my skills and continue learning.') 
-                : ('Estoy buscando activamente oportunidades laborales que me permitan profundizar mis habilidades y seguir aprendiendo.')
-              }
+              {isEnglish
+                ? "I am actively seeking job opportunities that will allow me to deepen my skills and continue learning."
+                : "Estoy buscando activamente oportunidades laborales que me permitan profundizar mis habilidades y seguir aprendiendo."}
             </p>
             <hr className="my-4" />
             <Row>
               <Col>
                 <p>
                   <span className="letter-color">
-                    {isEnglish ? ('Name:') : ('Nombre:')}
+                    {isEnglish ? "Name:" : "Nombre:"}
                   </span>{" "}
                   Florencia Nieva
                 </p>
                 <p>
                   <span className="letter-color">
-                    {isEnglish ? ('Age:') : ('Edad:')}
+                    {isEnglish ? "Age:" : "Edad:"}
                   </span>{" "}
                   18
                 </p>
@@ -70,13 +68,13 @@ export default function AboutMe({ menuOpen }) {
               <Col>
                 <p>
                   <span className="letter-color">
-                    {isEnglish ? ('Nationality:') : ('Nacionalidad:')}
+                    {isEnglish ? "Nationality:" : "Nacionalidad:"}
                   </span>{" "}
-                  {isEnglish ? ('Argentinian') : ('Argentina')}
+                  {isEnglish ? "Argentinian" : "Argentina"}
                 </p>
                 <p>
                   <span className="letter-color">
-                    {isEnglish ? ('English Level:') : ('Nivel de ingles')}
+                    {isEnglish ? "English Level:" : "Nivel de ingles"}
                   </span>{" "}
                   A2
                 </p>
@@ -88,7 +86,10 @@ export default function AboutMe({ menuOpen }) {
       <SoftSkills />
       <Skills />
       <Container className="mb-4">
-        <ArrowButton route="/projects" content={isEnglish ? ('Go to Projects') : ('Ir a Proyectos')} />
+        <ArrowButton
+          route="/projects"
+          content={isEnglish ? "Go to Projects" : "Ir a Proyectos"}
+        />
       </Container>
     </Container>
   );

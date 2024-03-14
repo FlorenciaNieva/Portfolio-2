@@ -11,7 +11,7 @@ import Ahorradas from "../../assets/images/ahorradas.png";
 
 export default function ProjectCard({ name, repo, link, overview, tools }) {
   return (
-    <Card className="project-card" style={{ width: '22rem' }}>
+    <Card className="project-card" style={{ width: "22rem" }}>
       <Card.Body>
         <Row>
           <Col>
@@ -34,7 +34,7 @@ export default function ProjectCard({ name, repo, link, overview, tools }) {
               ? MovieApp
               : name === "TodoList"
               ? TodoList
-              : name === "Carrers" 
+              : name === "Carrers"
               ? Carrers
               : name === "AhorrADAS"
               ? Ahorradas

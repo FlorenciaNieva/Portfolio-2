@@ -53,7 +53,7 @@ nav .link:hover {
   transition: margin-top 0.4s ease;
 }
 
-nav a:hover {
+.btn-language:hover {
   color: #13aec7 !important;
 }
 
