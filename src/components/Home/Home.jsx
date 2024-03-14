@@ -4,8 +4,11 @@ import Col from "react-bootstrap/Col";
 import ArrowButton from "../ArrowButton/ArrowButton";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { useLanguage } from "../../context/LanguagesContext";
 
 export default function Home() {
+  const { isEnglish } = useLanguage();
+
   return (
     <>
       <Container
@@ -15,7 +18,9 @@ export default function Home() {
         <Container className="pt-5">
           <Row>
             <Col>
-              <h3 className="fs-5">Hi! My name is</h3>
+              <h3 className="fs-5">
+                {isEnglish ? ('Hi! My name is') : ('¡Hola! Mi nombre es')}
+              </h3>
               <Col className="d-flex text-animation">
                 <h1>Florencia Nieva</h1>
               </Col>
@@ -56,7 +61,7 @@ export default function Home() {
                 </a>
               </div>
               <Col>
-                <ArrowButton route="/about-me" content="See More About Me" />
+                <ArrowButton route="/about-me" content={isEnglish ? ('See More About Me') : ('Ver Más Sobre Mi')} />
               </Col>
             </Col>
           </Row>
