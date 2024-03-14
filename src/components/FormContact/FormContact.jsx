@@ -24,13 +24,13 @@ export default function FormContact() {
         <Col sm>
           <FloatingLabel
             data-bs-theme="dark"
-            label={isEnglish ? ('Name *') : ('Nombre *')}
+            label={isEnglish ? "Name *" : "Nombre *"}
             className="floating-label mb-3"
           >
             <Form.Control
               type="text"
               name="name"
-              placeholder={isEnglish ? ('Name *') : ('Nombre *')}
+              placeholder={isEnglish ? "Name *" : "Nombre *"}
               className="form-control"
               id="name"
               autoComplete="off"
@@ -41,13 +41,13 @@ export default function FormContact() {
         <Col>
           <FloatingLabel
             data-bs-theme="dark"
-            label={isEnglish ? ('Last Name *') : ('Apellido *')}
+            label={isEnglish ? "Last Name *" : "Apellido *"}
             className="floating-label mb-3"
           >
             <Form.Control
               type="text"
               name="lastName"
-              placeholder={isEnglish ? ('Last Name *') : ('Apellido *')}
+              placeholder={isEnglish ? "Last Name *" : "Apellido *"}
               className="form-control"
               id="lastName"
               autoComplete="off"
@@ -73,14 +73,14 @@ export default function FormContact() {
       </FloatingLabel>
       <FloatingLabel
         data-bs-theme="dark"
-        label={isEnglish ? ('Message *') : ('Mensaje *')}
+        label={isEnglish ? "Message *" : "Mensaje *"}
         className="floating-label"
       >
         <Form.Control
           as="textarea"
           type="textarea"
           name="message"
-          placeholder={isEnglish ? ('Message *') : ('Mensaje *')}
+          placeholder={isEnglish ? "Message *" : "Mensaje *"}
           style={{ height: "100px" }}
           className="form-control"
           id="message"
@@ -93,9 +93,7 @@ export default function FormContact() {
           disabled={state.submitting}
           className="button-simple mt-5"
         >
-          {isEnglish ? ('Send Message') : ('Enviar Mensaje')}
-          {" "}
-          <FiSend />
+          {isEnglish ? "Send Message" : "Enviar Mensaje"} <FiSend />
         </Button>
       </div>
     </form>

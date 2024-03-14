@@ -28,22 +28,20 @@ export default function Header({ handleToggleMenu, menuOpen }) {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-3">
               <Link to="/" className="link text-center">
-                {isEnglish ? ('Home') : ('Inicio')}
+                {isEnglish ? "Home" : "Inicio"}
               </Link>
               <Link to="/about-me" className="link text-center">
-                {isEnglish ? ('About me') : ('Sobre mi')}
+                {isEnglish ? "About me" : "Sobre mi"}
               </Link>
               <Link to="/projects" className="link text-center">
-                {isEnglish ? ('Projects') : ('Proyectos')}
+                {isEnglish ? "Projects" : "Proyectos"}
               </Link>
               <Link to="/contact" className="link text-center">
-                {isEnglish ? ('Contact') : ('Contacto')}
+                {isEnglish ? "Contact" : "Contacto"}
               </Link>
             </Nav>
             <div className="d-flex justify-content-center ms-auto mt-2">
-              <a onClick={toggleLanguage}>
-                {isEnglish ? "EN" : "ES"}
-              </a>
+              <a onClick={toggleLanguage}>{isEnglish ? "EN" : "ES"}</a>
             </div>
           </Navbar.Collapse>
         </Navbar>

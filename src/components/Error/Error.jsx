@@ -12,9 +12,11 @@ export default function Error() {
       className="background d-flex align-items-center min-vh-100 pt-5"
     >
       <Container className="pt-5 text-center">
-      <MdErrorOutline fontSize="50px" />
+        <MdErrorOutline fontSize="50px" />
         <h1>
-          {isEnglish ? ('The page could not be found') : ('No se pudo encontrar la página.')}
+          {isEnglish
+            ? "The page could not be found"
+            : "No se pudo encontrar la página."}
         </h1>
       </Container>
     </Container>

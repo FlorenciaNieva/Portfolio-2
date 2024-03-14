@@ -18,7 +18,7 @@ import {
   SiFirebase,
   SiGithubpages,
   SiStyledcomponents,
-  SiAxios
+  SiAxios,
 } from "react-icons/si";
 import { MdOutlinePhonelink } from "react-icons/md";
 import { useLanguage } from "../../context/LanguagesContext";
@@ -31,7 +31,7 @@ export default function Skills() {
       <Row className="d-flex flex-column">
         <Col>
           <h2 className="letter-color">
-            {isEnglish ? ('SKILLS') : ('HABILIDADES')}
+            {isEnglish ? "SKILLS" : "HABILIDADES"}
           </h2>
         </Col>
         <Col className="d-flex flex-column p-5">
