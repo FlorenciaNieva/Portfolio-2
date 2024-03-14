@@ -10,6 +10,9 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Error from "./components/Error/Error";
 import { LanguagesContextProvider } from "./context/LanguagesContext";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
