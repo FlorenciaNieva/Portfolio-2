@@ -1,7 +1,4 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import { Container, Col, Row, Image } from "react-bootstrap";
 import ImageProfile from "../../assets/images/image-profile.png";
 import Skills from "../Skills/Skills";
 import ArrowButton from "../ArrowButton/ArrowButton";
