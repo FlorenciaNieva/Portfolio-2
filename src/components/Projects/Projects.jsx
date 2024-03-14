@@ -4,10 +4,12 @@ import db from "../../../firestore.config";
 import { Container, Row, Col, Spinner } from "react-bootstrap";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import ArrowButton from "../ArrowButton/ArrowButton";
+import { useLanguage } from "../../context/LanguagesContext";
 
 export default function Projects({ menuOpen }) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { isEnglish } = useLanguage();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,7 +34,9 @@ export default function Projects({ menuOpen }) {
       <Container className="d-flex flex-column align-items-center">
         <Row className={menuOpen ? "menu-open" : "menu-close"}>
           <Col>
-            <h2 className="letter-color m-5 pt-5">PROJECTS</h2>
+            <h2 className="letter-color m-5 pt-5">
+              {isEnglish ? ('PROJECTS') : ('PROYECTOS')}
+            </h2>
           </Col>
         </Row>
         <Row>
@@ -47,7 +51,7 @@ export default function Projects({ menuOpen }) {
                   name={info?.name}
                   repo={info?.repo}
                   link={info?.link}
-                  overview={info?.overview}
+                  overview={isEnglish ? info?.overview : info?.overviewEs}
                   tools={info?.tools}
                   key={info.id}
                 />
@@ -56,7 +60,7 @@ export default function Projects({ menuOpen }) {
           </Col>
         </Row>
         <Container className="mb-5">
-          <ArrowButton route="/contact" content="Go to Contact" />
+          <ArrowButton route="/contact" content={isEnglish ? ('Go to Contact') : ('Ir a Contacto')} />
         </Container>
       </Container>
     </Container>

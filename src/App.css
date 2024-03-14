@@ -18,6 +18,7 @@
 a {
   text-decoration: none !important;
   color: white !important;
+  cursor: pointer;
 }
 
 /* ------ Header ------ */
@@ -52,8 +53,8 @@ nav .link:hover {
   transition: margin-top 0.4s ease;
 }
 
-.icon-header:hover {
-  fill: #13aec7;
+nav a:hover {
+  color: #13aec7 !important;
 }
 
 /* ------- Home ------- */
@@ -84,6 +85,10 @@ nav .link:hover {
   to {
     background-position: 200% center;
   }
+}
+
+.icon-home:hover {
+  fill: #13aec7;
 }
 
 .button-animation {
