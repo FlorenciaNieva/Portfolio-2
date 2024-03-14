@@ -87,6 +87,10 @@ nav a:hover {
   }
 }
 
+.icon-home:hover {
+  fill: #13aec7;
+}
+
 .button-animation {
   position: relative;
   padding: 10px 25px !important;
