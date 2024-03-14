@@ -28,18 +28,18 @@ export default function Skills() {
 
   return (
     <Container className="d-flex justify-content-center text-center mb-5">
-      <Row
-        className="d-flex flex-column"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      >
+      <Row className="d-flex flex-column">
         <Col>
           <h2 className="letter-color">
             {isEnglish ? "SKILLS" : "HABILIDADES"}
           </h2>
         </Col>
-        <Col className="d-flex flex-column p-5">
+        <Col
+          className="d-flex flex-column p-5"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <div>Frontend Development:</div>
           <Col className="d-flex flex-wrap justify-content-center m-3">
             <div className="skill-badge">
