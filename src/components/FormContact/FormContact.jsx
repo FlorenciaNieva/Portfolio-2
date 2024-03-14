@@ -19,7 +19,7 @@ export default function FormContact() {
   }
 
   return (
-    <form className="d-flex flex-column p-5" onSubmit={handleSubmit}>
+    <form className="d-flex flex-column p-5 mt-5" onSubmit={handleSubmit}>
       <Row>
         <Col sm>
           <FloatingLabel
@@ -91,7 +91,7 @@ export default function FormContact() {
         <Button
           type="submit"
           disabled={state.submitting}
-          className="button-simple mt-3"
+          className="button-simple mt-5"
         >
           {isEnglish ? ('Send Message') : ('Enviar Mensaje')}
           {" "}
