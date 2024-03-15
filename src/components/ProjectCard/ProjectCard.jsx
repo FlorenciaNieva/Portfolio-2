@@ -11,7 +11,7 @@ import Ahorradas from "../../assets/images/ahorradas.png";
 
 export default function ProjectCard({ name, repo, link, overview, tools, duration }) {
   return (
-    <Card className="project-card" style={{ width: "22rem" }}  data-aos="flip-left" data-aos-duration={duration}>
+    <Card className="project-card" style={{ width: "22rem" }}>
       <Card.Body>
         <Row>
           <Col>
