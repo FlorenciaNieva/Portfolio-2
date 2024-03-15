@@ -35,7 +35,7 @@ nav .link {
 }
 
 nav .link:hover {
-  background-position-y: 100%;
+  background-position-y: 100% !important;
 }
 
 .header-toggle:focus,

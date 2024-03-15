@@ -9,7 +9,11 @@ export default function CardSoftSkill({ titleEn, titleEs }) {
   const { isEnglish } = useLanguage();
 
   return (
-    <Col className="d-flex justify-content-center mb-5">
+    <Col
+      className="d-flex justify-content-center mb-5"
+      data-aos="flip-up"
+      data-aos-duration="2000"
+    >
       <Card className="d-flex flex-column card-soft-skill text-center position-relative">
         <div className="position-absolute soft-skill-icon">
           {titleEn === "Teamwork" ? (

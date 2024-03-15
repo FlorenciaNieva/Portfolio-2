@@ -13,7 +13,11 @@ export default function AboutMe({ menuOpen }) {
     <Container fluid className="background container-about pb-4">
       <Container className="pb-5">
         <Row className={menuOpen ? "menu-open" : "menu-close"}>
-          <Col className="d-flex flex-column justify-content-center align-items-center">
+          <Col
+            className="d-flex flex-column justify-content-center align-items-center"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <Image
               src={ImageProfile}
               alt="profile image"
@@ -35,7 +39,11 @@ export default function AboutMe({ menuOpen }) {
               </Button>
             </div>
           </Col>
-          <Col className="about-me mb-5">
+          <Col
+            className="about-me mb-5"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <h2 className="letter-color">
               {isEnglish ? "ABOUT ME" : "SOBRE MI"}
             </h2>
