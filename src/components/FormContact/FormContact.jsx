@@ -22,7 +22,7 @@ export default function FormContact() {
     <form
       className="d-flex flex-column p-5 mt-5"
       onSubmit={handleSubmit}
-      data-aos="fade-up"
+      data-aos="zoom-out"
       data-aos-duration="2000"
     >
       <Row>
