@@ -22,7 +22,7 @@ export default function Contact({ menuOpen }) {
           <Row className="justify-content-center">
             <Col lg="9">
               <FormContact />
-              <div className="my-5" data-aos="fade-up" data-aos-duration="2200">
+              <div className="my-5">
                 <ArrowButton
                   route="/"
                   content={isEnglish ? "Go Back Home" : "Volver a Inicio"}
