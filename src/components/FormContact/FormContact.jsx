@@ -2,27 +2,40 @@ import React from "react";
 import { useForm } from "@formspree/react";
 import { Form, FloatingLabel, Button, Row, Col } from "react-bootstrap";
 import { FiSend } from "react-icons/fi";
+import { useLanguage } from "../../context/LanguagesContext";
 
 export default function FormContact() {
   const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_KEY);
+  const { isEnglish } = useLanguage();
 
   if (state.succeeded) {
-    return <p>Thanks for communicating with me!</p>;
+    return (
+      <p>
+        {isEnglish
+          ? "Thanks for communicating with me!"
+          : "Gracias por comunicarte conmigo"}
+      </p>
+    );
   }
 
   return (
-    <form className="d-flex flex-column p-5" onSubmit={handleSubmit}>
+    <form
+      className="d-flex flex-column p-5 mt-5"
+      onSubmit={handleSubmit}
+      data-aos="zoom-out"
+      data-aos-duration="2000"
+    >
       <Row>
         <Col sm>
           <FloatingLabel
             data-bs-theme="dark"
-            label="Name *"
+            label={isEnglish ? "Name *" : "Nombre *"}
             className="floating-label mb-3"
           >
             <Form.Control
               type="text"
               name="name"
-              placeholder="Name *"
+              placeholder={isEnglish ? "Name *" : "Nombre *"}
               className="form-control"
               id="name"
               autoComplete="off"
@@ -33,13 +46,13 @@ export default function FormContact() {
         <Col>
           <FloatingLabel
             data-bs-theme="dark"
-            label="Last Name *"
+            label={isEnglish ? "Last Name *" : "Apellido *"}
             className="floating-label mb-3"
           >
             <Form.Control
               type="text"
               name="lastName"
-              placeholder="Last Name *"
+              placeholder={isEnglish ? "Last Name *" : "Apellido *"}
               className="form-control"
               id="lastName"
               autoComplete="off"
@@ -65,14 +78,14 @@ export default function FormContact() {
       </FloatingLabel>
       <FloatingLabel
         data-bs-theme="dark"
-        label="Message *"
+        label={isEnglish ? "Message *" : "Mensaje *"}
         className="floating-label"
       >
         <Form.Control
           as="textarea"
           type="textarea"
           name="message"
-          placeholder="Message *"
+          placeholder={isEnglish ? "Message *" : "Mensaje *"}
           style={{ height: "100px" }}
           className="form-control"
           id="message"
@@ -83,10 +96,9 @@ export default function FormContact() {
         <Button
           type="submit"
           disabled={state.submitting}
-          className="button-form mt-3"
+          className="button-simple mt-5"
         >
-          Send Message
-          <FiSend />
+          {isEnglish ? "Send Message" : "Enviar Mensaje"} <FiSend />
         </Button>
       </div>
     </form>
