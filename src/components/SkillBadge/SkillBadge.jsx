@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function SkillBadge() {
+export default function SkillBadge({ icon, text }) {
   return (
-    <div>SkillBadge</div>
+    <div className="skill-badge">
+      {icon} {text}
+    </div>
   )
 }
