@@ -6,6 +6,7 @@ import {
   FaReact,
   FaBootstrap,
   FaNpm,
+  FaNode,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -52,10 +53,13 @@ export default function Skills() {
               <SiJavascript /> JavaScript
             </div>
             <div className="skill-badge">
-              <FaReact /> React
+              <FaReact /> ReactJS
             </div>
             <div className="skill-badge">
               <SiVite /> Vite
+            </div>
+            <div className="skill-badge">
+              <FaNode /> NodeJS
             </div>
             <div className="skill-badge">
               <MdOutlinePhonelink /> Responsive Desing
