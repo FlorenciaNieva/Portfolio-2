@@ -22,6 +22,7 @@ import {
   SiAxios,
 } from "react-icons/si";
 import { MdOutlinePhonelink } from "react-icons/md";
+import SkillBadge from "../SkillBadge/SkillBadge";
 import { useLanguage } from "../../context/LanguagesContext";
 
 export default function Skills() {
@@ -43,75 +44,37 @@ export default function Skills() {
         >
           <div>Frontend Development:</div>
           <Col className="d-flex flex-wrap justify-content-center m-3">
-            <div className="skill-badge">
-              <FaHtml5 /> HTML5
-            </div>
-            <div className="skill-badge">
-              <FaCss3Alt /> CSS3
-            </div>
-            <div className="skill-badge">
-              <SiJavascript /> JavaScript
-            </div>
-            <div className="skill-badge">
-              <FaReact /> ReactJS
-            </div>
-            <div className="skill-badge">
-              <SiVite /> Vite
-            </div>
-            <div className="skill-badge">
-              <FaNode /> NodeJS
-            </div>
-            <div className="skill-badge">
-              <MdOutlinePhonelink /> Responsive Desing
-            </div>
+            <SkillBadge icon={<FaHtml5 />} text="HTML5" />
+            <SkillBadge icon={<FaCss3Alt />} text="CSS3" />
+            <SkillBadge icon={<SiJavascript />} text="JavaScript" />
+            <SkillBadge icon={<FaReact />} text="ReactJS" />
+            <SkillBadge icon={<SiVite />} text="Vite" />
+            <SkillBadge icon={<FaNode />} text="NodeJS" />
+            <SkillBadge icon={<MdOutlinePhonelink />} text="Responsive Desing" />
           </Col>
           <div>Frameworks y Libraries UI:</div>
           <Col className="d-flex flex-wrap justify-content-center m-3">
-            <div className="skill-badge">
-              <FaBootstrap /> Bootstrap
-            </div>
-            <div className="skill-badge">
-              <SiBulma /> Bulma
-            </div>
-            <div className="skill-badge">
-              <SiChakraui /> Chakra UI
-            </div>
-            <div className="skill-badge">
-              <SiStyledcomponents /> Styled Components
-            </div>
+            <SkillBadge icon={<FaBootstrap />} text="Bootstrap" />
+            <SkillBadge icon={<SiBulma />} text="Bulma" />
+            <SkillBadge icon={<SiChakraui />} text="Chakra UI" />
+            <SkillBadge icon={<SiStyledcomponents />} text="Styled Components" />
           </Col>
           <div>Tools and Environment:</div>
           <Col className="d-flex flex-wrap justify-content-center m-3">
-            <div className="skill-badge">
-              <SiVisualstudiocode /> VSCode
-            </div>
-            <div className="skill-badge">
-              <FaGitAlt /> GIT
-            </div>
-            <div className="skill-badge">
-              <FaNpm /> NPM
-            </div>
-            <div className="skill-badge">
-              <SiAxios /> Axios
-            </div>
+            <SkillBadge icon={<SiVisualstudiocode />} text="VSCode" />
+            <SkillBadge icon={<FaGitAlt />} text="GIT" />
+            <SkillBadge icon={<FaNpm />} text="NPM" />
+            <SkillBadge icon={<SiAxios />} text="Axios" />
           </Col>
           <div>Deployment and Hosting:</div>
           <Col className="d-flex flex-wrap justify-content-center m-3">
-            <div className="skill-badge">
-              <SiNetlify /> Netlify
-            </div>
-            <div className="skill-badge">
-              <SiVercel /> Vercel
-            </div>
-            <div className="skill-badge">
-              <SiGithubpages /> Git Pages
-            </div>
+            <SkillBadge icon={<SiNetlify />} text="Netlify" />
+            <SkillBadge icon={<SiVercel />} text="Vercel" />
+            <SkillBadge icon={<SiGithubpages /> } text="GitHub Pages" />
           </Col>
           <div>DataBase NoSQL:</div>
           <Col className="d-flex flex-wrap justify-content-center m-3">
-            <div className="skill-badge">
-              <SiFirebase /> FireStore
-            </div>
+            <SkillBadge icon={<SiFirebase />} text="FireStore" />
           </Col>
         </Col>
       </Row>
