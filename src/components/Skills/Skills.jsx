@@ -7,6 +7,7 @@ import {
   FaBootstrap,
   FaNpm,
   FaNode,
+  FaGithub,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -63,6 +64,7 @@ export default function Skills() {
           <Col className="d-flex flex-wrap justify-content-center m-3">
             <SkillBadge icon={<SiVisualstudiocode />} text="VSCode" />
             <SkillBadge icon={<FaGitAlt />} text="GIT" />
+            <SkillBadge icon={<FaGithub />} text="GitHub" />
             <SkillBadge icon={<FaNpm />} text="NPM" />
             <SkillBadge icon={<SiAxios />} text="Axios" />
           </Col>
