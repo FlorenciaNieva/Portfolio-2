@@ -13,6 +13,16 @@ import Ahorradas from "../../assets/images/ahorradas.png";
 import ArrowButton from "../ArrowButton/ArrowButton";
 import { useLanguage } from "../../context/LanguagesContext";
 
+const imageMap = {
+  MovieApp,
+  TodoList,
+  Carrers,
+  MemeGenerator,
+  Portfolio,
+  PortfolioAda,
+  Ahorradas,
+};
+
 export default function Projects({ menuOpen }) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -58,6 +68,7 @@ export default function Projects({ menuOpen }) {
                   name={info?.name}
                   repo={info?.repo}
                   link={info?.link}
+                  image={imageMap[info?.name]}
                   overview={isEnglish ? info?.overview : info?.overviewEs}
                   tools={info?.tools}
                   key={info.id}
