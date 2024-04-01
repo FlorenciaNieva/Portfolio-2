@@ -4,7 +4,7 @@ import Skills from "../Skills/Skills";
 import ArrowButton from "../ArrowButton/ArrowButton";
 import SoftSkills from "../SoftSkills/SoftSkills";
 import { useLanguage } from "../../context/LanguagesContext";
-import DowloadButton from "../DowloadButton/DowloadButton";
+import DownloadButton from "../DownloadButton/DownloadButton";
 
 export default function AboutMe({ menuOpen }) {
   const { isEnglish } = useLanguage();
@@ -25,7 +25,7 @@ export default function AboutMe({ menuOpen }) {
               className="img-profile"
             />
             <div className="d-flex justify-content-center align-items-center mb-5">
-              <DowloadButton
+              <DownloadButton
                 link={
                   isEnglish
                     ? "https://drive.google.com/file/d/1TJuMytShuELldvx0UA9GYA2CPZc_rsBd/view?usp=sharing"
