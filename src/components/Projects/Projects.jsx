@@ -3,8 +3,25 @@ import { collection, getDocs } from "firebase/firestore";
 import db from "../../../firestore.config";
 import { Container, Row, Col, Spinner } from "react-bootstrap";
 import ProjectCard from "../ProjectCard/ProjectCard";
+import MovieApp from "../../assets/images/movie-app.png";
+import TodoList from "../../assets/images/todo-list.png";
+import Carrers from "../../assets/images/carrers.png";
+import MemeGenerator from "../../assets/images/generador-memes.png";
+import Portfolio from "../../assets/images/portfolio.png";
+import PortfolioAda from "../../assets/images/portfolio-ada.png";
+import Ahorradas from "../../assets/images/ahorradas.png";
 import ArrowButton from "../ArrowButton/ArrowButton";
 import { useLanguage } from "../../context/LanguagesContext";
+
+const imageMap = {
+  MovieApp,
+  TodoList,
+  Carrers,
+  MemeGenerator,
+  Portfolio,
+  PortfolioAda,
+  Ahorradas,
+};
 
 export default function Projects({ menuOpen }) {
   const [data, setData] = useState([]);
@@ -51,10 +68,10 @@ export default function Projects({ menuOpen }) {
                   name={info?.name}
                   repo={info?.repo}
                   link={info?.link}
+                  image={imageMap[info?.name]}
                   overview={isEnglish ? info?.overview : info?.overviewEs}
                   tools={info?.tools}
                   key={info.id}
-                  duration={(index + 1) * 400}
                 />
               ))
             )}
