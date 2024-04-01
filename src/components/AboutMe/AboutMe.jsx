@@ -1,10 +1,10 @@
-import { Container, Col, Row, Image, Button } from "react-bootstrap";
+import { Container, Col, Row, Image } from "react-bootstrap";
 import ImageProfile from "../../assets/images/image-profile.png";
-import { FaDownload } from "react-icons/fa";
 import Skills from "../Skills/Skills";
 import ArrowButton from "../ArrowButton/ArrowButton";
 import SoftSkills from "../SoftSkills/SoftSkills";
 import { useLanguage } from "../../context/LanguagesContext";
+import DowloadButton from "../DowloadButton/DowloadButton";
 
 export default function AboutMe({ menuOpen }) {
   const { isEnglish } = useLanguage();
@@ -25,18 +25,14 @@ export default function AboutMe({ menuOpen }) {
               className="img-profile"
             />
             <div className="d-flex justify-content-center align-items-center mb-5">
-              <Button
-                as="a"
-                className="button-simple mt-3"
-                href={
+              <DowloadButton
+                link={
                   isEnglish
                     ? "https://drive.google.com/file/d/1TJuMytShuELldvx0UA9GYA2CPZc_rsBd/view?usp=sharing"
                     : "https://drive.google.com/file/d/1x2ZjLMSgmQCrlQvQ9IvDrdwWZ0UjL0TT/view?usp=sharing"
                 }
-                target="_blank"
-              >
-                {isEnglish ? "Download CV" : "Descargar CV"} <FaDownload />
-              </Button>
+                text={isEnglish ? "Download CV" : "Descargar CV"}
+              />
             </div>
           </Col>
           <Col
