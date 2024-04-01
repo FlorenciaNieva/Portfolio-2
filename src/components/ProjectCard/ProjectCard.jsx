@@ -9,7 +9,7 @@ import Portfolio from "../../assets/images/portfolio.png";
 import PortfolioAda from "../../assets/images/portfolio-ada.png";
 import Ahorradas from "../../assets/images/ahorradas.png";
 
-export default function ProjectCard({ name, repo, link, overview, tools, duration }) {
+export default function ProjectCard({ name, repo, link, overview, tools }) {
   return (
     <Card className="project-card" style={{ width: "22rem" }}>
       <Card.Body>
