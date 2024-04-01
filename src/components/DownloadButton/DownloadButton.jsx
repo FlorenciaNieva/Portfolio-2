@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { FaDownload } from "react-icons/fa";
 
-export default function DowloadButton({ link, text }) {
+export default function DownloadButton({ link, text }) {
   return (
     <Button
       as="a"
