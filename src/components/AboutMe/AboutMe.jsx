@@ -30,8 +30,8 @@ export default function AboutMe({ menuOpen }) {
                 className="button-simple mt-3"
                 href={
                   isEnglish
-                    ? "https://drive.google.com/file/d/13H95G6kE9-1OvQ74Cmz0Q-T4exlfBDj3/view?usp=sharing"
-                    : "https://drive.google.com/file/d/1tCNB-iWmnMrKJ3Xp9asaDhwnk9VDGVjb/view?usp=sharing"
+                    ? "https://drive.google.com/file/d/1TJuMytShuELldvx0UA9GYA2CPZc_rsBd/view?usp=sharing"
+                    : "https://drive.google.com/file/d/1x2ZjLMSgmQCrlQvQ9IvDrdwWZ0UjL0TT/view?usp=sharing"
                 }
                 target="_blank"
               >
